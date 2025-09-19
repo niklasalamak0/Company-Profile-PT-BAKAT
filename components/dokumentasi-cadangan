@@ -1,0 +1,76 @@
+{
+    slug: "dokumentasi-ac",
+    title: "Dokumentasi Pekerjaan AC",
+    summary: "Instalasi dan perawatan AC split, cassette, hingga sistem VRV/VRF untuk retail dan gedung.",
+    topLevel: "maintenance",
+    cover_url: "/ac-maintenance.png",
+    tags: ["AC Split", "Cassette", "VRV/VRF"],
+    items_count: 86,
+  },
+  {
+    slug: "dokumentasi-advertising",
+    title: "Dokumentasi Pekerjaan Advertising",
+    summary: "Pekerjaan billboard, neon box, shop sign, branding fasad, hingga eksekusi lapangan.",
+    topLevel: "advertising",
+    cover_url: "/modern-billboard-mall-jakarta.jpg",
+    tags: ["Billboard", "Neon Box", "Shop Sign"],
+    items_count: 124,
+  },
+  {
+    slug: "dokumentasi-kelistrikan",
+    title: "Dokumentasi Pekerjaan Kelistrikan",
+    summary: "Instalasi panel listrik, MCB, grounding, emergency lighting, audit energi, dan SLO.",
+    topLevel: "maintenance",
+    cover_url: "/apartment-electrical-system-installation.jpg",
+    tags: ["Panel", "SLO", "Audit Energi"],
+    items_count: 57,
+  },
+  {
+    slug: "dokumentasi-pembangunan",
+    title: "Dokumentasi Pekerjaan Pembangunan",
+    summary: "Pekerjaan konstruksi gedung termasuk struktur, plumbing, roofing, dan cleaning.",
+    topLevel: "building",
+    cover_url: "/luxury-hotel-building-maintenance.jpg",
+    tags: ["Struktur", "Plumbing", "Roofing"],
+    items_count: 73,
+  },
+  {
+    slug: "dokumentasi-pembangunan-besi",
+    title: "Dokumentasi Pekerjaan Besi",
+    summary: "Pekerjaan fabrikasi dan konstruksi besi untuk struktur dan elemen bangunan.",
+    topLevel: "building",
+    cover_url: "/steel-construction.jpg",
+    tags: ["Struktur Besi", "Fabrikasi", "Konstruksi"],
+    items_count: 73,
+  },
+  {
+    slug: "dokumentasi-security-system",
+    title: "Dokumentasi Pekerjaan Security System",
+    summary: "Instalasi dan maintenance sistem keamanan: CCTV, access control, alarm kebakaran.",
+    topLevel: "maintenance",
+    cover_url: "/security-system-installation.jpg",
+    tags: ["CCTV", "Access Control", "Fire Alarm"],
+    items_count: 73,
+  },
+  {
+    slug: "dokumentasi-maintenance",
+    title: "Dokumentasi Pekerjaan Maintenance Gedung",
+    summary: "Preventive & corrective maintenance meliputi struktur, plumbing, roofing, hingga cleaning.",
+    topLevel: "maintenance",
+    cover_url: "/luxury-hotel-building-maintenance.jpg",
+    tags: ["Preventive", "Corrective", "SLA"],
+    items_count: 73,
+  },
+
+                    <div className="flex items-center text-sm text-gray-600">
+                    <MapPin className="mr-2 h-4 w-4" />
+                    {it.lokasi}
+                  </div>
+                  <div className="mt-1 flex items-center text-sm text-gray-600">
+                    <Calendar className="mr-2 h-4 w-4" />
+                    {new Date(it.tanggal).toLocaleDateString("id-ID", {
+                      day: "2-digit",
+                      month: "long",
+                      year: "numeric",
+                    })}
+                  </div>
