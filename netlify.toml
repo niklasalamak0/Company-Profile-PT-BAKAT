@@ -1,0 +1,12 @@
+# netlify.toml
+[build]
+  # pastikan pnpm tersedia via corepack
+  command = "corepack enable && pnpm install --frozen-lockfile && pnpm build"
+  publish = ".next"
+
+[build.environment]
+  NODE_VERSION = "20"        # 18 atau 20, pilih salah satu yg tersedia di Netlify
+  PNPM_VERSION = "9"         # optional, biar konsisten
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
