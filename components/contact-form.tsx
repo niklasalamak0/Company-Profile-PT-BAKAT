@@ -9,6 +9,7 @@ import { Textarea } from "@/components/ui/textarea"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Phone, Mail, MapPin, Clock, Send, CheckCircle } from "lucide-react"
 
+/** ======== Service types harus sama persis dengan yang disimpan ke DB ======== */
 type ServiceType =
   | "advertising"          // Advertising & Signage
   | "building_care"        // Perawatan & Perbaikan Bangunan
@@ -17,7 +18,7 @@ type ServiceType =
   | "ac_ventilation"       // AC & Ventilasi
   | "lighting"             // Lampu & Penerangan
   | "painting"             // Pengecatan
-  | "ceiling";             // Pemasangan Plafond
+  | "ceiling"              // Pemasangan Plafond
 
 const SERVICE_OPTIONS: { value: ServiceType; label: string }[] = [
   { value: "advertising",    label: "Advertising & Signage" },
@@ -29,7 +30,6 @@ const SERVICE_OPTIONS: { value: ServiceType; label: string }[] = [
   { value: "painting",       label: "Pengecatan" },
   { value: "ceiling",        label: "Pemasangan Plafond" },
 ]
-
 
 interface ContactFormData {
   name: string
@@ -58,36 +58,65 @@ export function ContactSection() {
   const isEmailValid = useMemo(() => /\S+@\S+\.\S+/.test(formData.email), [formData.email])
   const isPhoneValid = useMemo(() => /^[0-9+\s()-]{8,}$/.test(formData.phone), [formData.phone])
   const isReady =
-    !!formData.name && !!formData.email && !!formData.phone && !!formData.service_type && !!formData.message && isEmailValid && isPhoneValid
+    !!formData.name &&
+    !!formData.email &&
+    !!formData.phone &&
+    !!formData.service_type &&
+    !!formData.message &&
+    isEmailValid &&
+    isPhoneValid
 
-  const onChange = (k: keyof ContactFormData, v: string) => setFormData(p => ({ ...p, [k]: v }))
+  const onChange = (k: keyof ContactFormData, v: string) =>
+    setFormData((p) => ({ ...p, [k]: v }))
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  async function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
+    if (isSubmitting) return
     setError(null)
-    if (formData.website) return // honeypot
+
+    // honeypot (anti bot)
+    if (formData.website) return
+
     if (!isReady) {
       setError("Mohon lengkapi data wajib dan pastikan email/telepon valid.")
       return
     }
+
     setIsSubmitting(true)
     try {
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
+        cache: "no-store",
         body: JSON.stringify({
-          name: formData.name,
-          email: formData.email,
-          phone: formData.phone,
-          company: formData.company,
-          service_type: formData.service_type,
-          message: formData.message,
+          name: formData.name.trim(),
+          email: formData.email.trim().toLowerCase(),
+          phone: formData.phone.trim(),
+          company: formData.company?.trim() || null, // null agar cocok dengan skema DB
+          service_type: formData.service_type,       // string persis sesuai tipe
+          message: formData.message.trim(),
         }),
       })
-      const data = await res.json()
-      if (!res.ok) throw new Error(data?.error || "Gagal mengirim pesan")
+
+      // Upayakan parse JSON aman
+      let payload: any = {}
+      try { payload = await res.json() } catch { /* ignore */ }
+
+      if (!res.ok) {
+        throw new Error(payload?.error || "Gagal mengirim pesan")
+      }
+
+      // success (201 dari API)
       setIsSubmitted(true)
-      setFormData({ name: "", email: "", phone: "", company: "", service_type: "", message: "", website: "" })
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        company: "",
+        service_type: "",
+        message: "",
+        website: "",
+      })
     } catch (err) {
       setError(err instanceof Error ? err.message : "Terjadi kesalahan, coba lagi.")
     } finally {
@@ -111,8 +140,13 @@ export function ContactSection() {
               <CardContent className="p-12">
                 <CheckCircle className="w-16 h-16 text-green-500 mx-auto mb-6" />
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Terima kasih!</h3>
-                <p className="text-lg text-gray-600">Pesan Anda sudah kami terima. Kami akan menghubungi ≤ 24 jam.</p>
-                <Button onClick={() => setIsSubmitted(false)} className="mt-6 bg-orange-500 hover:bg-orange-600 text-white">
+                <p className="text-lg text-gray-600">
+                  Pesan Anda sudah kami terima. Kami akan menghubungi ≤ 24 jam.
+                </p>
+                <Button
+                  onClick={() => setIsSubmitted(false)}
+                  className="mt-6 bg-orange-500 hover:bg-orange-600 text-white"
+                >
                   Kirim Pesan Lain
                 </Button>
               </CardContent>
@@ -126,6 +160,7 @@ export function ContactSection() {
   return (
     <section id="kontak" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Header */}
         <div className="text-center mb-12">
           <div className="inline-flex items-center px-4 py-2 bg-orange-100 text-orange-800 rounded-full text-sm font-medium mb-4">
             Hubungi Kami
@@ -159,40 +194,68 @@ export function ContactSection() {
                 <div className="grid md:grid-cols-2 gap-4">
                   <div className="space-y-2">
                     <Label htmlFor="name">Nama *</Label>
-                    <Input id="name" value={formData.name} onChange={(e) => onChange("name", e.target.value)} required />
+                    <Input
+                      id="name"
+                      value={formData.name}
+                      onChange={(e) => onChange("name", e.target.value)}
+                      required
+                    />
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="company">Perusahaan</Label>
-                    <Input id="company" value={formData.company} onChange={(e) => onChange("company", e.target.value)} />
+                    <Input
+                      id="company"
+                      value={formData.company}
+                      onChange={(e) => onChange("company", e.target.value)}
+                    />
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="email">Email *</Label>
-                    <Input id="email" type="email" value={formData.email} onChange={(e) => onChange("email", e.target.value)} required />
-                    {!isEmailValid && formData.email && <p className="text-sm text-red-600">Email tidak valid.</p>}
+                    <Input
+                      id="email"
+                      type="email"
+                      value={formData.email}
+                      onChange={(e) => onChange("email", e.target.value)}
+                      required
+                      aria-invalid={!!formData.email && !isEmailValid}
+                    />
+                    {!isEmailValid && formData.email && (
+                      <p className="text-sm text-red-600">Email tidak valid.</p>
+                    )}
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="phone">Telepon/WhatsApp *</Label>
-                    <Input id="phone" value={formData.phone} onChange={(e) => onChange("phone", e.target.value)} required />
-                    {!isPhoneValid && formData.phone && <p className="text-sm text-red-600">Nomor tidak valid.</p>}
+                    <Input
+                      id="phone"
+                      value={formData.phone}
+                      onChange={(e) => onChange("phone", e.target.value)}
+                      required
+                      aria-invalid={!!formData.phone && !isPhoneValid}
+                    />
+                    {!isPhoneValid && formData.phone && (
+                      <p className="text-sm text-red-600">Nomor tidak valid.</p>
+                    )}
                   </div>
                 </div>
 
-                  <div className="space-y-2">
-                    <Label>Jenis Layanan *</Label>
-                    <Select value={formData.service_type} onValueChange={(v) => onChange("service_type", v as ServiceType)}>
-                      <SelectTrigger>
-                        <SelectValue placeholder="Pilih layanan" />
-                      </SelectTrigger>
-                      <SelectContent>
-                        {SERVICE_OPTIONS.map(opt => (
-                          <SelectItem key={opt.value} value={opt.value}>
-                            {opt.label}
-                          </SelectItem>
-                        ))}
-                      </SelectContent>
-                    </Select>
-                  </div>
-
+                <div className="space-y-2">
+                  <Label>Jenis Layanan *</Label>
+                  <Select
+                    value={formData.service_type}
+                    onValueChange={(v) => onChange("service_type", v as ServiceType)}
+                  >
+                    <SelectTrigger>
+                      <SelectValue placeholder="Pilih layanan" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      {SERVICE_OPTIONS.map((opt) => (
+                        <SelectItem key={opt.value} value={opt.value}>
+                          {opt.label}
+                        </SelectItem>
+                      ))}
+                    </SelectContent>
+                  </Select>
+                </div>
 
                 <div className="space-y-2">
                   <Label htmlFor="message">Detail Kebutuhan *</Label>
@@ -206,9 +269,17 @@ export function ContactSection() {
                   />
                 </div>
 
-                {error && <div className="rounded-lg border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">{error}</div>}
+                {error && (
+                  <div className="rounded-lg border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
+                    {error}
+                  </div>
+                )}
 
-                <Button type="submit" disabled={isSubmitting || !isReady} className="w-full bg-orange-500 hover:bg-orange-600 text-white">
+                <Button
+                  type="submit"
+                  disabled={isSubmitting || !isReady}
+                  className="w-full bg-orange-500 hover:bg-orange-600 text-white"
+                >
                   {isSubmitting ? "Mengirim…" : <>Kirim Pesan <Send className="w-4 h-4 ml-2" /></>}
                 </Button>
               </form>
@@ -224,7 +295,9 @@ export function ContactSection() {
                   const Icon = info.icon
                   return (
                     <div key={i} className="flex items-start gap-4">
-                      <div className="bg-orange-100 p-3 rounded-xl"><Icon className="h-6 w-6 text-orange-500" /></div>
+                      <div className="bg-orange-100 p-3 rounded-xl">
+                        <Icon className="h-6 w-6 text-orange-500" />
+                      </div>
                       <div>
                         <h4 className="font-semibold text-gray-900">{info.title}</h4>
                         <p className="text-gray-700">{info.value}</p>
