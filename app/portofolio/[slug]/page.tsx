@@ -58,6 +58,7 @@ const ADVERTISING_SUBCATEGORIES: { key: AdvertisingSubcategory; label: string }[
   { key: "road-sign", label: "Road Sign" },
   { key: "event", label: "Event" },
   { key: "umbul-umbul", label: "Umbul-umbul" },
+  { key: "promosi", label: "Promosi" },
 ]
 
 /* ========= DATA DEMO (ganti ke Supabase nanti) ========= */
@@ -78,19 +79,66 @@ const db: Record<Slug, DocPageData> = {
     topLevel: "advertising",
     hero: "/modern-billboard-mall-jakarta.jpg",
     items: [
+
+    // --- Advertising ---
+    { 
+      id: "ads-1", 
+      url: "/advertising/banner-promosi.jpg", 
+      lokasi: "Jakarta", 
+      tanggal: "2024-08-12", 
+      caption: "Banner Promosi", 
+      subCategory: "promosi" 
+    },
+    { 
+      id: "ads-2", 
+      url: "/advertising/face-cade-tulisan-timbul-promosi.jpg", 
+      lokasi: "Surabaya", 
+      tanggal: "2024-08-13", 
+      caption: "Face Cade Tulisan Timbul Promosi", 
+      subCategory: "promosi" 
+    },
+    { 
+      id: "ads-3", 
+      url: "/advertising/nama-toko-promosi.jpg", 
+      lokasi: "Bandung", 
+      tanggal: "2024-08-14", 
+      caption: "Nama Toko Promosi", 
+      subCategory: "promosi" 
+    },
+    { 
+      id: "ads-4", 
+      url: "/advertising/neon-box-promosi.jpg", 
+      lokasi: "Yogyakarta", 
+      tanggal: "2024-08-15", 
+      caption: "Neon Box Promosi", 
+      subCategory: "promosi" 
+    },
+    { 
+      id: "ads-5", 
+      url: "/advertising/papan-nama-promosi.jpg", 
+      lokasi: "Malang", 
+      tanggal: "2024-08-16", 
+      caption: "Papan Nama Promosi", 
+      subCategory: "promosi" 
+    },
+    { 
+      id: "ads-6", 
+      url: "/advertising/slow-down-dan-papan-nama-promosi.jpg", 
+      lokasi: "Semarang", 
+      tanggal: "2024-08-17", 
+      caption: "Slow Down dan Papan Nama Promosi", 
+      subCategory: "promosi" 
+    },
+
       // --- Baliho ---
-      { id: "adv-1", url: "/baliho/baliho-bus-guling.jpg", lokasi: "Jl. Mayor Sujadi No.58, Jepun, Tulungagung, Jawa Timur 66229", tanggal: "2025-07-23", caption: "Baliho 4 x 6 m", subCategory: "baliho" },
-      { id: "adv-2", url: "/baliho/baliho-gandusari.jpg", lokasi: "Tugu, Sukorejo, Kec. Gandusari, Trenggalek, Jawa Timur 66372", tanggal: "2025-07-28", caption: "Baliho 4 x 6 m", subCategory: "baliho" },
-      { id: "adv-3", url: "/baliho/baliho-kranding.jpg", lokasi: "Jl. Raya Durenan No.16, Kranding, Bendorejo, Trenggalek 66371", tanggal: "2025-08-13", caption: "Baliho 4 x 6 m", subCategory: "baliho" },
-      { id: "adv-4", url: "/baliho/baliho-tasikmadu-finish.jpg", lokasi: "Jl. Raya Pantai Prigi, Tasikmadu, Watulimo, Trenggalek 66382", tanggal: "2025-08-01", caption: "Baliho 4 x 6 m", subCategory: "baliho" },
-      { id: "adv-5", url: "/baliho/baliho-gondang.jpg", lokasi: "Jl. Nasional III, Gondang, Tulungagung", tanggal: "2025-07-28", caption: "Baliho 4 x 6 m", subCategory: "baliho" },
+      { id: "adv-1", url: "/baliho/baliho-gandusari.jpg", lokasi: "Tugu, Sukorejo, Kec. Gandusari, Trenggalek, Jawa Timur 66372", tanggal: "2025-07-28", caption: "Baliho 4 x 6 m", subCategory: "baliho" },
+      { id: "adv-2", url: "/baliho/baliho-kranding.jpg", lokasi: "Jl. Raya Durenan No.16, Kranding, Bendorejo, Trenggalek 66371", tanggal: "2025-08-13", caption: "Baliho 4 x 6 m", subCategory: "baliho" },
+      { id: "adv-3", url: "/baliho/baliho-tasikmadu-finish.jpg", lokasi: "Jl. Raya Pantai Prigi, Tasikmadu, Watulimo, Trenggalek 66382", tanggal: "2025-08-01", caption: "Baliho 4 x 6 m", subCategory: "baliho" },
 
       // --- Visual Backwall ---
-      { id: "vbw-1", url: "/backwall/backlite-76.jpg", lokasi: "Jl. Nasional, Tulungagung", tanggal: "2024-11-22", caption: "Backlite 76", subCategory: "visual-backwall" },
-      { id: "vbw-2", url: "/backwall/backlite-76mangga-fiks.jpg", lokasi: "Jl. Nasional, Tulungagung", tanggal: "2024-11-22", caption: "Backlite 76 Mangga", subCategory: "visual-backwall" },
-      { id: "vbw-3", url: "/backwall/backlite-djarum-espresso-fiks.jpg", lokasi: "Jl. Raya Besar, Trenggalek", tanggal: "2024-11-23", caption: "Backlite Djarum Espresso", subCategory: "visual-backwall" },
-      { id: "vbw-4", url: "/backwall/backlite-djarum-super.jpg", lokasi: "Jl. Raya Besar, Trenggalek", tanggal: "2024-11-23", caption: "Backlite Djarum Super", subCategory: "visual-backwall" },
-      { id: "vbw-5", url: "/backwall/backlite-mld.jpg", lokasi: "Jl. Raya Pantai Prigi, Trenggalek", tanggal: "2024-11-24", caption: "Backlite MLD", subCategory: "visual-backwall" },
+      { id: "vbw-1", url: "/backwall/backlite-76mangga-fiks.jpg", lokasi: "Jl. Nasional, Tulungagung", tanggal: "2024-11-22", caption: "Backlite 76 Mangga", subCategory: "visual-backwall" },
+      { id: "vbw-2", url: "/backwall/backlite-djarum-espresso-fiks.jpg", lokasi: "Jl. Raya Besar, Trenggalek", tanggal: "2024-11-23", caption: "Backlite Djarum Espresso", subCategory: "visual-backwall" },
+      { id: "vbw-3", url: "/backwall/backlite-mld.jpg", lokasi: "Jl. Raya Pantai Prigi, Trenggalek", tanggal: "2024-11-24", caption: "Backlite MLD", subCategory: "visual-backwall" },
 
       // --- PJU ---
       { id: "pju-1", url: "/pju/pju-76apel-fiks.jpg", lokasi: "Jl. Apel, Jakarta", tanggal: "2024-11-06", caption: "PJU 76 Apel", subCategory: "pju" },
@@ -98,33 +146,22 @@ const db: Record<Slug, DocPageData> = {
       { id: "pju-3", url: "/pju/pju-djarum-safari-fiks.jpg", lokasi: "Jl. Safari, Jakarta", tanggal: "2024-11-08", caption: "PJU Djarum Safari", subCategory: "pju" },
 
       // --- Road Sign ---
-      { id: "roadsign-1", url: "/roadsign/road-sign-76madu.jpg", lokasi: "Jl. Madu, Jakarta", tanggal: "2024-11-09", caption: "Road Sign 76 Madu", subCategory: "road-sign" },
-      { id: "roadsign-2", url: "/roadsign/road-sign-76mangga-fiks.jpg", lokasi: "Jl. Mangga, Jakarta", tanggal: "2024-11-10", caption: "Road Sign 76 Mangga", subCategory: "road-sign" },
-      { id: "roadsign-3", url: "/roadsign/road-sign-76royal-fiks.jpg", lokasi: "Jl. Royal, Jakarta", tanggal: "2024-11-11", caption: "Road Sign 76 Royal", subCategory: "road-sign" },
-      { id: "roadsign-4", url: "/roadsign/road-sign-geo-fiks.jpg", lokasi: "Jl. Geo, Jakarta", tanggal: "2024-11-12", caption: "Road Sign Geo", subCategory: "road-sign" },
-      { id: "roadsign-5", url: "/roadsign/road-sign-la.jpg", lokasi: "Jl. LA, Jakarta", tanggal: "2024-11-13", caption: "Road Sign LA", subCategory: "road-sign" },
-      { id: "roadsign-6", url: "/roadsign/road-sign-mld-fiks.jpg", lokasi: "Jl. MLD, Jakarta", tanggal: "2024-11-14", caption: "Road Sign MLD", subCategory: "road-sign" },
-      { id: "roadsign-7", url: "/roadsign/road-sign-raptor-fiks.jpg", lokasi: "Jl. Raptor, Jakarta", tanggal: "2024-11-15", caption: "Road Sign Raptor", subCategory: "road-sign" },
+      { id: "roadsign-1", url: "/roadsign/road-sign-76mangga-fiks.jpg", lokasi: "Jl. Mangga, Jakarta", tanggal: "2024-11-10", caption: "Road Sign Djarum 76 Mangga", subCategory: "road-sign" },
+      { id: "roadsign-2", url: "/roadsign/road-sign-mld-fiks.jpg", lokasi: "Jl. MLD, Jakarta", tanggal: "2024-11-14", caption: "Road Sign MLD", subCategory: "road-sign" },
+      { id: "roadsign-3", url: "/roadsign/road-sign-raptor-fiks.jpg", lokasi: "Jl. Raptor, Jakarta", tanggal: "2024-11-15", caption: "Road Sign Raptor", subCategory: "road-sign" },
 
       // --- Panel Toko ---
-      { id: "paneltoko-1", url: "/paneltoko/drp-ukuran-1,5x9m.jpg", lokasi: "Outlet Jakarta", tanggal: "2024-11-01", caption: "Panel Toko ukuran 1,5 x 9 m", subCategory: "panel-toko" },
-      { id: "paneltoko-2", url: "/paneltoko/drp-ukuran-1x3m-fiks.jpg", lokasi: "Outlet Jakarta", tanggal: "2024-11-02", caption: "Panel Toko ukuran 1 x 3 m", subCategory: "panel-toko" },
-      { id: "paneltoko-3", url: "/paneltoko/drp-ukuran-1x4m-fiks.jpg", lokasi: "Outlet Jakarta", tanggal: "2024-11-03", caption: "Panel Toko ukuran 1 x 4 m", subCategory: "panel-toko" },
-      { id: "paneltoko-4", url: "/paneltoko/drp-ukuran-1x5m.jpg", lokasi: "Outlet Jakarta", tanggal: "2024-11-04", caption: "Panel Toko ukuran 1 x 5 m", subCategory: "panel-toko" },
-      { id: "paneltoko-5", url: "/paneltoko/drp-ukuran-1x6m-fiks.jpg", lokasi: "Outlet Jakarta", tanggal: "2024-11-05", caption: "Panel Toko ukuran 1 x 6 m", subCategory: "panel-toko" },
+      { id: "paneltoko-1", url: "/paneltoko/drp-ukuran-1x3m-fiks.jpg", lokasi: "Outlet Jakarta", tanggal: "2024-11-02", caption: "Panel Toko ukuran 1 x 3 m", subCategory: "panel-toko" },
+      { id: "paneltoko-2", url: "/paneltoko/drp-ukuran-1x4m-fiks.jpg", lokasi: "Outlet Jakarta", tanggal: "2024-11-03", caption: "Panel Toko ukuran 1 x 4 m", subCategory: "panel-toko" },
+      { id: "paneltoko-3", url: "/paneltoko/drp-ukuran-1x5m.jpg", lokasi: "Outlet Jakarta", tanggal: "2024-11-04", caption: "Panel Toko ukuran 1 x 5 m", subCategory: "panel-toko" },
 
       // --- Shop Sign ---
-      { id: "shop-1", url: "/shopsign/shop-sign-76mangga-fiks.jpg", lokasi: "Jl. Raya 76 Mangga, Jakarta", tanggal: "2024-08-01", caption: "Shop Sign 76 Mangga", subCategory: "shop-sign" },
-      { id: "shop-2", url: "/shopsign/shop-sign-76nanas.jpg", lokasi: "Jl. Raya 76 Nanas, Jakarta", tanggal: "2024-08-02", caption: "Shop Sign 76 Nanas", subCategory: "shop-sign" },
-      { id: "shop-3", url: "/shopsign/shop-sign-76royal-fiks.jpg", lokasi: "Jl. Raya 76 Royal, Jakarta", tanggal: "2024-08-03", caption: "Shop Sign 76 Royal", subCategory: "shop-sign" },
-      { id: "shop-4", url: "/shopsign/shop-sign-djarum-espresso-fiks.jpg", lokasi: "Toko Mitra, Jakarta", tanggal: "2024-08-04", caption: "Shop Sign Djarum Espresso", subCategory: "shop-sign" },
-      { id: "shop-5", url: "/shopsign/shop-sign-djarum-safari-fiks.jpg", lokasi: "Mini Market Safari, Jakarta", tanggal: "2024-08-05", caption: "Shop Sign Djarum Safari (versi 1)", subCategory: "shop-sign" },
-      { id: "shop-7", url: "/shopsign/shop-sign-djarum-super-fiks.jpg", lokasi: "Supermart, Jakarta", tanggal: "2024-08-07", caption: "Shop Sign Djarum Super", subCategory: "shop-sign" },
-      { id: "shop-8", url: "/shopsign/shop-sign-geo-fiks.jpg", lokasi: "Toko Geo, Jakarta", tanggal: "2024-08-08", caption: "Shop Sign Geo", subCategory: "shop-sign" },
-      { id: "shop-9", url: "/shopsign/shop-sign-la-lights.jpg", lokasi: "Convenience Store, Jakarta", tanggal: "2024-08-09", caption: "Shop Sign LA Lights", subCategory: "shop-sign" },
-      { id: "shop-10", url: "/shopsign/shop-sign-la.jpg", lokasi: "Convenience Store, Jakarta", tanggal: "2024-08-10", caption: "Shop Sign LA", subCategory: "shop-sign" },
-      { id: "shop-11", url: "/shopsign/shop-sign-mld.jpg", lokasi: "Supermarket MLD, Jakarta", tanggal: "2024-08-11", caption: "Shop Sign MLD", subCategory: "shop-sign" },
-      { id: "shop-12", url: "/shopsign/shop-sign-raptor-fiks.jpg", lokasi: "Raptor Store, Jakarta", tanggal: "2024-08-12", caption: "Shop Sign Raptor", subCategory: "shop-sign" },
+      { id: "shop-1", url: "/shopsign/shop-sign-76nanas.jpg", lokasi: "Jl. Raya 76 Nanas, Jakarta", tanggal: "2024-08-02", caption: "Shop Sign 76 Nanas", subCategory: "shop-sign" },
+      { id: "shop-2", url: "/shopsign/shop-sign-djarum-safari-fiks.jpg", lokasi: "Mini Market Safari, Jakarta", tanggal: "2024-08-05", caption: "Shop Sign Djarum Safari", subCategory: "shop-sign" },
+      { id: "shop-3", url: "/shopsign/shop-sign-djarum-super-fiks.jpg", lokasi: "Supermart, Jakarta", tanggal: "2024-08-07", caption: "Shop Sign Djarum Super", subCategory: "shop-sign" },
+      { id: "shop-4", url: "/shopsign/shop-sign-la-lights.jpg", lokasi: "Convenience Store, Jakarta", tanggal: "2024-08-09", caption: "Shop Sign LA Lights", subCategory: "shop-sign" },
+      { id: "shop-5", url: "/shopsign/shop-sign-la.jpg", lokasi: "Convenience Store, Jakarta", tanggal: "2024-08-10", caption: "Shop Sign LA", subCategory: "shop-sign" },
+      { id: "shop-6", url: "/shopsign/shop-sign-mld.jpg", lokasi: "Supermarket MLD, Jakarta", tanggal: "2024-08-11", caption: "Shop Sign MLD", subCategory: "shop-sign" },
 
       // --- Spanduk ---
       { id: "spanduk-1", url: "/spanduk/spanduk-76apel.jpg", lokasi: "Outlet 76 Apel, Jakarta", tanggal: "2024-08-01", caption: "Spanduk 76 Apel", subCategory: "spanduk" },
@@ -139,9 +176,8 @@ const db: Record<Slug, DocPageData> = {
 
       // --- Tinplate ---
       { id: "tinplate-1", url: "/tinplate/tinplate-76-fiks.jpg", lokasi: "Outlet 76, Jakarta", tanggal: "2024-09-01", caption: "Tinplate 76", subCategory: "tinplate" },
-      { id: "tinplate-2", url: "/tinplate/tinplate-geo.jpg", lokasi: "Toko Geo, Jakarta", tanggal: "2024-09-02", caption: "Tinplate Geo", subCategory: "tinplate" },
-      { id: "tinplate-3", url: "/tinplate/tinplate-raptor-fiks.jpg", lokasi: "Outlet Raptor, Jakarta", tanggal: "2024-09-03", caption: "Tinplate Raptor", subCategory: "tinplate" },
-      { id: "tinplate-4", url: "/tinplate/tinplate-vip.jpg", lokasi: "Outlet VIP, Jakarta", tanggal: "2024-09-04", caption: "Tinplate VIP", subCategory: "tinplate" },
+      { id: "tinplate-2", url: "/tinplate/tinplate-raptor-fiks.jpg", lokasi: "Outlet Raptor, Jakarta", tanggal: "2024-09-03", caption: "Tinplate Raptor", subCategory: "tinplate" },
+      { id: "tinplate-3", url: "/tinplate/tinplate-vip.jpg", lokasi: "Outlet VIP, Jakarta", tanggal: "2024-09-04", caption: "Tinplate VIP", subCategory: "tinplate" },
 
       // --- Vertical Banner (VB) ---
       { id: "vb-1", url: "/vb/vb-76apel-fiks.jpg", lokasi: "Event 76 Apel, Jakarta", tanggal: "2024-10-01", caption: "Vertical Banner 76 Apel", subCategory: "vertical-banner" },
@@ -158,11 +194,9 @@ const db: Record<Slug, DocPageData> = {
       { id: "event-4", url: "/event/panggung-event.jpg", lokasi: "Hall Jakarta Convention Center", tanggal: "2024-11-17", caption: "Panggung Event", subCategory: "event" },
       { id: "event-5", url: "/event/pintu-event.jpg", lokasi: "Hall Jakarta Convention Center", tanggal: "2024-11-18", caption: "Pintu Event", subCategory: "event" },
       { id: "event-6", url: "/event/spanduk-event.jpg", lokasi: "Hall Jakarta Convention Center", tanggal: "2024-11-18", caption: "Spanduk Event", subCategory: "event" },
-      { id: "event-7", url: "/event/spanduk-event2.jpg", lokasi: "Hall Jakarta Convention Center", tanggal: "2024-11-19", caption: "Spanduk Event 2", subCategory: "event" },
-      { id: "event-8", url: "/event/tenda-event.jpg", lokasi: "Outdoor Area Jakarta", tanggal: "2024-11-19", caption: "Tenda Event", subCategory: "event" },
-      { id: "event-9", url: "/event/umbul-umbul-event.jpg", lokasi: "GOR Lembu Peteng Tulungagung", tanggal: "2024-11-20", caption: "Umbul-Umbul Event", subCategory: "event" },
-      { id: "event-10", url: "/event/vb-event-smash-heppii.jpg", lokasi: "GOR Lembu Peteng Tulungagung", tanggal: "2024-11-20", caption: "Vertical Banner (Smash Heppii)", subCategory: "event" },
-      { id: "event-11", url: "/event/vb-event.jpg", lokasi: "Tulungagung", tanggal: "2024-11-21", caption: "Vertical Banner Event", subCategory: "event" },
+      { id: "event-7", url: "/event/tenda-event.jpg", lokasi: "Outdoor Area Jakarta", tanggal: "2024-11-19", caption: "Tenda Event", subCategory: "event" },
+      { id: "event-8", url: "/event/umbul-umbul-event.jpg", lokasi: "GOR Lembu Peteng Tulungagung", tanggal: "2024-11-20", caption: "Umbul-Umbul Event", subCategory: "event" },
+      { id: "event-9", url: "/event/vb-event.jpg", lokasi: "Tulungagung", tanggal: "2024-11-21", caption: "Vertical Banner Event", subCategory: "event" },
     ],
   },
     
@@ -236,31 +270,31 @@ const db: Record<Slug, DocPageData> = {
       },
       {
         id: "bangun-10",
-        url: "/bangunan/bangun-rak.jpg",
-        lokasi: "Toko Retail, Jakarta",
-        tanggal: "2024-09-19",
-        caption: "Pembuatan rak display toko",
-      },
-      {
-        id: "bangun-11",
         url: "/bangunan/bangun-sumur-bor.jpg",
         lokasi: "Perumahan Warga, Bogor",
         tanggal: "2024-09-20",
         caption: "Pembangunan sumur bor",
       },
       {
-        id: "bangun-12",
+        id: "bangun-11",
         url: "/bangunan/bangun-swalayan.jpg",
         lokasi: "Swalayan Modern, Semarang",
         tanggal: "2024-09-21",
         caption: "Pembangunan area swalayan",
       },
       {
-        id: "bangun-13",
-        url: "/bangunan/bangun-workop.jpg",
+        id: "bangun-12",
+        url: "/bangunan/bangun-warkop.jpg",
         lokasi: "Workshop UMKM, Malang",
         tanggal: "2024-09-22",
         caption: "Pembangunan warung kopi (warkop)",
+      },
+      {
+        id: "bangun-13",
+        url: "/bangunan/bangun-lantai.jpg",
+        lokasi: "Workshop UMKM, Malang",
+        tanggal: "2024-09-22",
+        caption: "Pembangunan lantai teras Indomaret",
       },
     ],
   },
@@ -294,27 +328,20 @@ const db: Record<Slug, DocPageData> = {
       },
       {
         id: "listrik-4",
-        url: "/listrik/maintenance-meja76.jpg",
-        lokasi: "Retail 76, Jakarta",
-        tanggal: "2024-09-04",
-        caption: "Penambahan jalur listrik meja kasir",
-      },
-      {
-        id: "listrik-5",
         url: "/listrik/maintenance-panel.jpg",
         lokasi: "Ruang Panel, Jakarta",
         tanggal: "2024-09-05",
         caption: "Perapihan kabel & inspeksi panel utama",
       },
       {
-        id: "listrik-6",
+        id: "listrik-5",
         url: "/listrik/maintenance-panel2.jpg",
         lokasi: "Ruang Panel, Jakarta",
         tanggal: "2024-09-06",
         caption: "Pembersihan, pengencangan koneksi MCB",
       },
       {
-        id: "listrik-7",
+        id: "listrik-6",
         url: "/listrik/maintenance-stop-kontak.jpg",
         lokasi: "Area Layanan Pelanggan, Jakarta",
         tanggal: "2024-09-08",
@@ -359,41 +386,34 @@ const db: Record<Slug, DocPageData> = {
       },
       {
         id: "mt-5",
-        url: "/maintenance/maintenance-meja76.jpg",
-        lokasi: "Retail 76, Jakarta",
-        tanggal: "2024-10-05",
-        caption: "Perkuatan meja kasir & rapi kabel",
-      },
-      {
-        id: "mt-6",
         url: "/maintenance/maintenance-plafon.jpg",
         lokasi: "Lobby Utama, Jakarta",
         tanggal: "2024-10-06",
         caption: "Perbaikan plafon gypsum & pengecatan",
       },
       {
-        id: "mt-7",
+        id: "mt-6",
         url: "/maintenance/maintenance-plafon2.jpg",
         lokasi: "Koridor Lantai 2, Jakarta",
         tanggal: "2024-10-07",
         caption: "Penggantian rangka plafon & panel",
       },
       {
-        id: "mt-8",
+        id: "mt-7",
         url: "/maintenance/maintenance-saluran-air.jpg",
         lokasi: "Area Servis, Jakarta",
         tanggal: "2024-10-08",
         caption: "Pembersihan & re-routing saluran air",
       },
       {
-        id: "mt-9",
+        id: "mt-8",
         url: "/maintenance/maintenance-sealer-jendela.jpg",
         lokasi: "Ruang Meeting, Jakarta",
         tanggal: "2024-10-09",
         caption: "Penyegelan ulang kaca/jendela luar",
       },
       {
-        id: "mt-10",
+        id: "mt-9",
         url: "/maintenance/maintenance-talang.jpg",
         lokasi: "Atap Gedung, Jakarta",
         tanggal: "2024-10-10",
@@ -401,7 +421,6 @@ const db: Record<Slug, DocPageData> = {
       },
     ],
   },
-
 };
 
 
@@ -414,6 +433,7 @@ export default function DocCategoryPage({
   params: { slug: Slug }
   searchParams?: { [key: string]: string | string[] | undefined }
 }) {
+
   const data = db[params.slug]
   if (!data) return notFound()
 
