@@ -141,9 +141,12 @@ const db: Record<Slug, DocPageData> = {
       { id: "vbw-3", url: "/backwall/backlite-mld.jpg", lokasi: "Jl. Raya Pantai Prigi, Trenggalek", tanggal: "2024-11-24", caption: "Backlite MLD", subCategory: "visual-backwall" },
 
       // --- PJU ---
-      { id: "pju-1", url: "/pju/pju-76apel-fiks.jpg", lokasi: "Jl. Apel, Jakarta", tanggal: "2024-11-06", caption: "PJU 76 Apel", subCategory: "pju" },
-      { id: "pju-2", url: "/pju/pju-76mangga-fiks.jpg", lokasi: "Jl. Mangga, Jakarta", tanggal: "2024-11-07", caption: "PJU 76 Mangga", subCategory: "pju" },
-      { id: "pju-3", url: "/pju/pju-djarum-safari-fiks.jpg", lokasi: "Jl. Safari, Jakarta", tanggal: "2024-11-08", caption: "PJU Djarum Safari", subCategory: "pju" },
+      { id: "pju-1", url: "/pju/pju-safari.jpg", lokasi: "Jl. Apel, Jakarta", tanggal: "2024-11-06", caption: "PJU DJARUM Safari", subCategory: "pju" },
+      { id: "pju-2", url: "/pju/pju-trenggalek.jpg", lokasi: "Jl. Mangga, Jakarta", tanggal: "2024-11-07", caption: "PJU Trenggalek", subCategory: "pju" },
+      { id: "pju-3", url: "/pju/pju-76mangga.jpg", lokasi: "Jl. Safari, Jakarta", tanggal: "2024-11-08", caption: "PJU 76 Mangga", subCategory: "pju" },
+      { id: "pju-4", url: "/pju/pju-djarum.jpg", lokasi: "Jl. Apel, Jakarta", tanggal: "2024-11-06", caption: "PJU DJARUM Super", subCategory: "pju" },
+      { id: "pju-5", url: "/pju/pju-laice.jpg", lokasi: "Jl. Mangga, Jakarta", tanggal: "2024-11-07", caption: "PJU Trenggalek", subCategory: "pju" },
+      { id: "pju-6", url: "/pju/pju-royal.jpg", lokasi: "Jl. Safari, Jakarta", tanggal: "2024-11-08", caption: "PJU 76 Mangga", subCategory: "pju" },
 
       // --- Road Sign ---
       { id: "roadsign-1", url: "/roadsign/road-sign-76mangga-fiks.jpg", lokasi: "Jl. Mangga, Jakarta", tanggal: "2024-11-10", caption: "Road Sign Djarum 76 Mangga", subCategory: "road-sign" },
@@ -151,28 +154,25 @@ const db: Record<Slug, DocPageData> = {
       { id: "roadsign-3", url: "/roadsign/road-sign-raptor-fiks.jpg", lokasi: "Jl. Raptor, Jakarta", tanggal: "2024-11-15", caption: "Road Sign Raptor", subCategory: "road-sign" },
 
       // --- Panel Toko ---
-      { id: "paneltoko-1", url: "/paneltoko/drp-ukuran-1x3m-fiks.jpg", lokasi: "Outlet Jakarta", tanggal: "2024-11-02", caption: "Panel Toko ukuran 1 x 3 m", subCategory: "panel-toko" },
+      { id: "paneltoko-1", url: "/paneltoko/drp-ukuran-1x5m.jpg", lokasi: "Outlet Jakarta", tanggal: "2024-11-02", caption: "Panel Toko ukuran 1 x 5 m", subCategory: "panel-toko" },
       { id: "paneltoko-2", url: "/paneltoko/drp-ukuran-1x4m-fiks.jpg", lokasi: "Outlet Jakarta", tanggal: "2024-11-03", caption: "Panel Toko ukuran 1 x 4 m", subCategory: "panel-toko" },
-      { id: "paneltoko-3", url: "/paneltoko/drp-ukuran-1x5m.jpg", lokasi: "Outlet Jakarta", tanggal: "2024-11-04", caption: "Panel Toko ukuran 1 x 5 m", subCategory: "panel-toko" },
+      { id: "paneltoko-3", url: "/paneltoko/drp-ukuran-1x6m-fiks.jpg", lokasi: "Outlet Jakarta", tanggal: "2024-11-04", caption: "Panel Toko ukuran 1 x 6 m", subCategory: "panel-toko" },
 
       // --- Shop Sign ---
-      { id: "shop-1", url: "/shopsign/shop-sign-76nanas.jpg", lokasi: "Jl. Raya 76 Nanas, Jakarta", tanggal: "2024-08-02", caption: "Shop Sign 76 Nanas", subCategory: "shop-sign" },
-      { id: "shop-2", url: "/shopsign/shop-sign-djarum-safari-fiks.jpg", lokasi: "Mini Market Safari, Jakarta", tanggal: "2024-08-05", caption: "Shop Sign Djarum Safari", subCategory: "shop-sign" },
-      { id: "shop-3", url: "/shopsign/shop-sign-djarum-super-fiks.jpg", lokasi: "Supermart, Jakarta", tanggal: "2024-08-07", caption: "Shop Sign Djarum Super", subCategory: "shop-sign" },
-      { id: "shop-4", url: "/shopsign/shop-sign-la-lights.jpg", lokasi: "Convenience Store, Jakarta", tanggal: "2024-08-09", caption: "Shop Sign LA Lights", subCategory: "shop-sign" },
-      { id: "shop-5", url: "/shopsign/shop-sign-la.jpg", lokasi: "Convenience Store, Jakarta", tanggal: "2024-08-10", caption: "Shop Sign LA", subCategory: "shop-sign" },
-      { id: "shop-6", url: "/shopsign/shop-sign-mld.jpg", lokasi: "Supermarket MLD, Jakarta", tanggal: "2024-08-11", caption: "Shop Sign MLD", subCategory: "shop-sign" },
+      { id: "shop-1", url: "/shopsign/shop-sign-djarum-safari-fiks.jpg", lokasi: "Mini Market Safari, Jakarta", tanggal: "2024-08-05", caption: "Shop Sign Djarum Safari", subCategory: "shop-sign" },
+      { id: "shop-2", url: "/shopsign/shop-sign-raptor-fiks.jpg", lokasi: "Convenience Store, Jakarta", tanggal: "2024-08-10", caption: "Shop Sign LA", subCategory: "shop-sign" },
+      { id: "shop-3", url: "/shopsign/shop-sign-mld.jpg", lokasi: "Supermarket MLD, Jakarta", tanggal: "2024-08-11", caption: "Shop Sign MLD", subCategory: "shop-sign" },
 
       // --- Spanduk ---
-      { id: "spanduk-1", url: "/spanduk/spanduk-76apel.jpg", lokasi: "Outlet 76 Apel, Jakarta", tanggal: "2024-08-01", caption: "Spanduk 76 Apel", subCategory: "spanduk" },
-      { id: "spanduk-2", url: "/spanduk/spanduk-76mangga.jpg", lokasi: "Outlet 76 Mangga, Jakarta", tanggal: "2024-08-02", caption: "Spanduk 76 Mangga", subCategory: "spanduk" },
-      { id: "spanduk-3", url: "/spanduk/spanduk-76royal.jpg", lokasi: "Outlet 76 Royal, Jakarta", tanggal: "2024-08-03", caption: "Spanduk 76 Royal", subCategory: "spanduk" },
-      { id: "spanduk-4", url: "/spanduk/spanduk-bit.jpg", lokasi: "Outlet Bit, Jakarta", tanggal: "2024-08-04", caption: "Spanduk Bit", subCategory: "spanduk" },
-      { id: "spanduk-5", url: "/spanduk/spanduk-djarum-safari.jpg", lokasi: "Toko Safari, Jakarta", tanggal: "2024-08-05", caption: "Spanduk Djarum Safari", subCategory: "spanduk" },
-      { id: "spanduk-6", url: "/spanduk/spanduk-dongan.jpg", lokasi: "Mini Market Dongan, Jakarta", tanggal: "2024-08-06", caption: "Spanduk Dongan", subCategory: "spanduk" },
+      { id: "spanduk-1", url: "/spanduk/spanduk-event-fiks.jpg", lokasi: "Outlet 76 Apel, Jakarta", tanggal: "2024-08-01", caption: "Spanduk Event", subCategory: "spanduk" },
+      { id: "spanduk-2", url: "/spanduk/spanduk-indo.jpg", lokasi: "Outlet 76 Mangga, Jakarta", tanggal: "2024-08-02", caption: "Spanduk Indomaret", subCategory: "spanduk" },
+      { id: "spanduk-3", url: "/spanduk/spanduk-hut.jpg", lokasi: "Outlet 76 Royal, Jakarta", tanggal: "2024-08-03", caption: "Spanduk 76 Royal", subCategory: "spanduk" },
+      { id: "spanduk-4", url: "/spanduk/spanduk-selamat-datang.jpg", lokasi: "Outlet Bit, Jakarta", tanggal: "2024-08-04", caption: "Spanduk Selamat Datang", subCategory: "spanduk" },
+      { id: "spanduk-5", url: "/spanduk/spanduk-djarum.jpg", lokasi: "Toko Safari, Jakarta", tanggal: "2024-08-05", caption: "Spanduk Djarum Super", subCategory: "spanduk" },
+      { id: "spanduk-6", url: "/spanduk/spanduk-perusahaan.jpg", lokasi: "Mini Market Dongan, Jakarta", tanggal: "2024-08-06", caption: "Spanduk Perusahaan", subCategory: "spanduk" },
       { id: "spanduk-7", url: "/spanduk/spanduk-raptor.jpg", lokasi: "Outlet Raptor, Jakarta", tanggal: "2024-08-07", caption: "Spanduk Raptor", subCategory: "spanduk" },
-      { id: "spanduk-8", url: "/spanduk/spanduk-smash-heppi.jpg", lokasi: "Outlet Smash Heppi, Jakarta", tanggal: "2024-08-08", caption: "Spanduk Smash Heppi", subCategory: "spanduk" },
-      { id: "spanduk-9", url: "/spanduk/spanduk-vipper.jpg", lokasi: "Outlet Vipper, Jakarta", tanggal: "2024-08-09", caption: "Spanduk Vipper", subCategory: "spanduk" },
+      { id: "spanduk-8", url: "/spanduk/spanduk-smash-heppi.jpg", lokasi: "Outlet Smash Heppi, Jakarta", tanggal: "2024-08-08", caption: "Spanduk Event Smash Heppi", subCategory: "spanduk" },
+      { id: "spanduk-9", url: "/spanduk/spanduk-kemerdekaan.jpg", lokasi: "Outlet Vipper, Jakarta", tanggal: "2024-08-09", caption: "Spanduk Kemerdekaan", subCategory: "spanduk" },
 
       // --- Tinplate ---
       { id: "tinplate-1", url: "/tinplate/tinplate-76-fiks.jpg", lokasi: "Outlet 76, Jakarta", tanggal: "2024-09-01", caption: "Tinplate 76", subCategory: "tinplate" },
@@ -181,10 +181,10 @@ const db: Record<Slug, DocPageData> = {
 
       // --- Vertical Banner (VB) ---
       { id: "vb-1", url: "/vb/vb-76apel-fiks.jpg", lokasi: "Event 76 Apel, Jakarta", tanggal: "2024-10-01", caption: "Vertical Banner 76 Apel", subCategory: "vertical-banner" },
-      { id: "vb-2", url: "/vb/vb-76mangga.jpg", lokasi: "Event 76 Mangga, Jakarta", tanggal: "2024-10-02", caption: "Vertical Banner 76 Mangga", subCategory: "vertical-banner" },
+      { id: "vb-2", url: "/vb/vb-event-grand-final.jpg", lokasi: "Event 76 Mangga, Jakarta", tanggal: "2024-10-02", caption: "Vertical Banner Event Grand Final Miss Otonomi Indonesia 2024", subCategory: "vertical-banner" },
       { id: "vb-3", url: "/vb/vb-76royal.jpg", lokasi: "Event 76 Royal, Jakarta", tanggal: "2024-10-03", caption: "Vertical Banner 76 Royal", subCategory: "vertical-banner" },
-      { id: "vb-4", url: "/vb/vb-event-smash-heppii.jpg", lokasi: "Event Smash Heppi, Jakarta", tanggal: "2024-10-04", caption: "Vertical Banner Smash Heppi", subCategory: "vertical-banner" },
-      { id: "vb-5", url: "/vb/vb-event.jpg", lokasi: "Event Publik, Jakarta", tanggal: "2024-10-05", caption: "Vertical Banner Event", subCategory: "vertical-banner" },
+      { id: "vb-4", url: "/vb/vb-event-smash-heppii.jpg", lokasi: "Event Smash Heppi, Jakarta", tanggal: "2024-10-04", caption: "Vertical Banner EventSmash Heppi", subCategory: "vertical-banner" },
+      { id: "vb-5", url: "/vb/vb-event-tag.jpg", lokasi: "Event Publik, Jakarta", tanggal: "2024-10-05", caption: "Vertical Banner Event Shining July Tulungagung", subCategory: "vertical-banner" },
       { id: "vb-6", url: "/vb/vb-vipper-fiks.jpg", lokasi: "Event Vipper, Jakarta", tanggal: "2024-10-06", caption: "Vertical Banner Vipper", subCategory: "vertical-banner" },
 
       // --- Event ---
@@ -197,6 +197,8 @@ const db: Record<Slug, DocPageData> = {
       { id: "event-7", url: "/event/tenda-event.jpg", lokasi: "Outdoor Area Jakarta", tanggal: "2024-11-19", caption: "Tenda Event", subCategory: "event" },
       { id: "event-8", url: "/event/umbul-umbul-event.jpg", lokasi: "GOR Lembu Peteng Tulungagung", tanggal: "2024-11-20", caption: "Umbul-Umbul Event", subCategory: "event" },
       { id: "event-9", url: "/event/vb-event.jpg", lokasi: "Tulungagung", tanggal: "2024-11-21", caption: "Vertical Banner Event", subCategory: "event" },
+
+      { id: "umbul-umbul-1", url: "/event/umbul-umbul-event.jpg", lokasi: "GOR Lembu Peteng Tulungagung", tanggal: "2024-11-20", caption: "Pemasangan Umbul-Umbul", subCategory: "umbul-umbul" },
     ],
   },
     
@@ -502,11 +504,9 @@ export default function DocCategoryPage({
             <div className="mt-6 rounded-xl bg-white p-6 shadow-sm border border-gray-200">
               <p className="text-sm text-gray-700 leading-relaxed">
                 Eksplorasi dokumentasi portofolio kami yang tertata secara sistematis, mencakup berbagai kategori pekerjaan 
-                seperti <span className="font-medium text-gray-900">Spanduk, Baliho, Visual Backwall, PJU, Vertical Banner, Tinplate, Panel Toko, Shop Sign, Road Sign, Event,</span> 
+                seperti <span className="font-medium text-gray-900">Spanduk,Media Promosi, Baliho, Visual Backwall, PJU, Vertical Banner, Tinplate, Panel Toko, Shop Sign, Road Sign, Penanganan Event,</span> 
                 hingga <span className="font-medium text-gray-900">Umbul-umbul</span>.  
                 <br /><br />
-                Setiap kategori menyajikan galeri visual yang dilengkapi detail lokasi serta waktu pengerjaan, memastikan 
-                transparansi sekaligus menegaskan komitmen kami terhadap standar profesionalisme.
               </p>
             </div>
 
@@ -566,55 +566,55 @@ export default function DocCategoryPage({
         )}
 
 
+{/* Galeri */}
+{items.length === 0 ? (
+  <div className="rounded-xl border bg-white p-10 text-center text-gray-600">
+    Belum ada dokumentasi pada kategori ini. Silakan pilih kategori lain.
+  </div>
+) : (
+  <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+    {items.map((it) => (
+      <div
+        key={it.id}
+        className="overflow-hidden rounded-xl bg-white shadow-sm flex flex-col"
+      >
+        {/* Wrapper gambar */}
+        <div className="relative w-full aspect-[4/3] bg-gray-100"> 
+          <Image
+            src={it.url || "/placeholder.svg"}
+            alt={it.caption || data.title}
+            fill
+            className="object-cover" // ✅ penuh & seragam
+            sizes="(max-width:768px) 100vw, (max-width:1200px) 50vw, 33vw"
+          />
+        </div>
 
-        {/* Galeri */}
-        {items.length === 0 ? (
-          <div className="rounded-xl border bg-white p-10 text-center text-gray-600">
-            Belum ada dokumentasi pada kategori ini. Silakan pilih kategori lain.
-          </div>
-        ) : (
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {items.map((it) => (
-              <div
-                key={it.id}
-                className="overflow-hidden rounded-xl bg-white shadow-sm flex flex-col"
+        {/* Konten */}
+        <div className="p-4 flex-1 flex flex-col justify-between">
+          {it.caption && (
+            <p className="mb-1 text-sm font-medium text-gray-900">
+              {it.caption}
+            </p>
+          )}
+
+          {"subCategory" in it && it.subCategory && (
+            <div className="mb-2">
+              <Badge
+                variant="secondary"
+                className="bg-orange-50 text-orange-700"
               >
-                {/* Wrapper gambar */}
-                <div className="relative h-64 w-full bg-gray-100 flex items-center justify-center">
-                  <Image
-                    src={it.url || "/placeholder.svg"}
-                    alt={it.caption || data.title}
-                    fill
-                    className="object-contain p-2"
-                    sizes="(max-width:768px) 100vw, (max-width:1200px) 50vw, 33vw"
-                  />
-                </div>
+                {ADVERTISING_SUBCATEGORIES.find(
+                  (s) => s.key === it.subCategory
+                )?.label ?? it.subCategory}
+              </Badge>
+            </div>
+          )}
+        </div>
+      </div>
+    ))}
+  </div>
+)}
 
-                {/* Konten form info */}
-                <div className="p-4 flex-1 flex flex-col justify-between">
-                  {it.caption && (
-                    <p className="mb-1 text-sm font-medium text-gray-900">{it.caption}</p>
-                  )}
-
-                  {"subCategory" in it && it.subCategory && (
-                    <div className="mb-2">
-                      <Badge
-                        variant="secondary"
-                        className="bg-orange-50 text-orange-700"
-                      >
-                        {ADVERTISING_SUBCATEGORIES.find(
-                          (s) => s.key === it.subCategory
-                        )?.label ?? it.subCategory}
-                      </Badge>
-                    </div>
-                  )}
-
-
-                </div>
-              </div>
-            ))}
-          </div>
-        )}
 
       </div>
 

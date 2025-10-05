@@ -101,11 +101,6 @@ export function PortfolioSection() {
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
             Pilih Kategori Dokumentasi
           </h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Setiap kategori menampilkan rekam jejak pekerjaan kami secara lengkap, disertai foto, lokasi, dan tanggal pengerjaan
-            untuk memastikan transparansi, profesionalisme, dan kualitas hasil.
-          </p>
-
         </div>
 
         <div className="flex justify-center mb-10">
