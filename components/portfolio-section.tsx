@@ -25,7 +25,7 @@ const docCategories: DocCategory[] = [
     summary:
       "Pekerjaan billboard, neon box, shop sign, branding fasad, hingga eksekusi lapangan.",
     topLevel: "advertising",
-    cover_url: "/modern-billboard-mall-jakarta.jpg",
+    cover_url: "/iklan3.jpg",
     // ✅ pakai nama layanan resmi
     tags: ["Advertising & Signage", "Lampu & Penerangan"],
     items_count: 124,
@@ -36,9 +36,9 @@ const docCategories: DocCategory[] = [
     summary:
       "Instalasi panel listrik, MCB, grounding, emergency lighting, audit energi, dan SLO.",
     topLevel: "maintenance",
-    cover_url: "/apartment-electrical-system-installation.jpg",
+    cover_url: "/listrik2.jpg",
     // ✅ pakai nama layanan resmi
-    tags: ["Mekanik & Elektrik", "Lampu & Penerangan"],
+    tags: ["Mekanik & Elektrik", "Lampu & Penerangan", "Panel"],
     items_count: 57,
   },
   {
@@ -47,13 +47,13 @@ const docCategories: DocCategory[] = [
     summary:
       "Pekerjaan konstruksi gedung termasuk struktur, plumbing, roofing, dan cleaning.",
     topLevel: "building",
-    cover_url: "/maintenance-perbaikan.jpg",
+    cover_url: "/bangunan.jpg",
     // ✅ pakai nama layanan resmi
     tags: [
       "Perawatan & Perbaikan Bangunan",
       "Renovasi Bangunan & Interior",
       "Pemasangan Plafond",
-      "Pengecatan",
+      "Pembangunan Besi",
     ],
     items_count: 73,
   },
@@ -63,7 +63,7 @@ const docCategories: DocCategory[] = [
     summary:
       "Preventive & corrective maintenance meliputi struktur, plumbing, roofing, hingga cleaning.",
     topLevel: "maintenance",
-    cover_url: "/luxury-hotel-building-maintenance.jpg",
+    cover_url: "/maintenance2.jpg",
     // ✅ pakai nama layanan resmi
     tags: [
       "Perawatan & Perbaikan Bangunan",

@@ -63,21 +63,11 @@ const ADVERTISING_SUBCATEGORIES: { key: AdvertisingSubcategory; label: string }[
 
 /* ========= DATA DEMO (ganti ke Supabase nanti) ========= */
 const db: Record<Slug, DocPageData> = {
-  "dokumentasi-ac": {
-    title: "Dokumentasi Pekerjaan AC",
-    topLevel: "maintenance",
-    hero: "/ac-maintenance.png",
-    items: [
-      { id: "ac-1", url: "/ac-1.jpg", lokasi: "Indomaret, Jakarta Timur", tanggal: "2024-02-12", caption: "Delivery & staging unit" },
-      { id: "ac-2", url: "/ac-2.jpg", lokasi: "Indomaret, Jakarta Timur", tanggal: "2024-02-12", caption: "Pemasangan indoor unit" },
-      { id: "ac-3", url: "/ac-3.jpg", lokasi: "Swalayan Karanganom, Klaten", tanggal: "2024-03-05", caption: "Pemasangan pipa & bracket" },
-    ],
-  },
 
   "dokumentasi-advertising": {
     title: "Dokumentasi Advertising",
     topLevel: "advertising",
-    hero: "/modern-billboard-mall-jakarta.jpg",
+    hero: "/iklan3.jpg",
     items: [
 
     // --- Advertising ---
@@ -115,7 +105,7 @@ const db: Record<Slug, DocPageData> = {
     },
     { 
       id: "ads-5", 
-      url: "/advertising/papan-nama-promosi.jpg", 
+      url: "/advertising/papan-nama-promosi2.jpg", 
       lokasi: "Malang", 
       tanggal: "2024-08-16", 
       caption: "Papan Nama Promosi", 
@@ -123,7 +113,7 @@ const db: Record<Slug, DocPageData> = {
     },
     { 
       id: "ads-6", 
-      url: "/advertising/slow-down-dan-papan-nama-promosi.jpg", 
+      url: "/advertising/slow-down-dan-papan-nama-promosi2.jpg", 
       lokasi: "Semarang", 
       tanggal: "2024-08-17", 
       caption: "Slow Down dan Papan Nama Promosi", 
@@ -133,7 +123,10 @@ const db: Record<Slug, DocPageData> = {
       // --- Baliho ---
       { id: "adv-1", url: "/baliho/baliho-gandusari.jpg", lokasi: "Tugu, Sukorejo, Kec. Gandusari, Trenggalek, Jawa Timur 66372", tanggal: "2025-07-28", caption: "Baliho 4 x 6 m", subCategory: "baliho" },
       { id: "adv-2", url: "/baliho/baliho-kranding.jpg", lokasi: "Jl. Raya Durenan No.16, Kranding, Bendorejo, Trenggalek 66371", tanggal: "2025-08-13", caption: "Baliho 4 x 6 m", subCategory: "baliho" },
-      { id: "adv-3", url: "/baliho/baliho-tasikmadu-finish.jpg", lokasi: "Jl. Raya Pantai Prigi, Tasikmadu, Watulimo, Trenggalek 66382", tanggal: "2025-08-01", caption: "Baliho 4 x 6 m", subCategory: "baliho" },
+      { id: "adv-3", url: "/baliho/baliho-4x6m-cita-rasa-nusantara.jpg", lokasi: "Jl. Raya Pantai Prigi, Tasikmadu, Watulimo, Trenggalek 66382", tanggal: "2025-08-01", caption: "Baliho 4 x 6 m", subCategory: "baliho" },
+      { id: "adv-4", url: "/baliho/baliho-event.jpg", lokasi: "Tugu, Sukorejo, Kec. Gandusari, Trenggalek, Jawa Timur 66372", tanggal: "2025-07-28", caption: "Baliho 4 x 6 m Event Festival", subCategory: "baliho" },
+      { id: "adv-5", url: "/baliho/baliho-event-futsal-rill.jpg", lokasi: "Jl. Raya Durenan No.16, Kranding, Bendorejo, Trenggalek 66371", tanggal: "2025-08-13", caption: "Baliho 4 x 6 m Event Futsal", subCategory: "baliho" },
+      { id: "adv-6", url: "/baliho/baliho-sabilutaubah.jpg", lokasi: "Jl. Raya Pantai Prigi, Tasikmadu, Watulimo, Trenggalek 66382", tanggal: "2025-08-01", caption: "Baliho 4 x 6 m Event Sabilutaubah", subCategory: "baliho" },
 
       // --- Visual Backwall ---
       { id: "vbw-1", url: "/backwall/backlite-76mangga-fiks.jpg", lokasi: "Jl. Nasional, Tulungagung", tanggal: "2024-11-22", caption: "Backlite 76 Mangga", subCategory: "visual-backwall" },
@@ -141,12 +134,12 @@ const db: Record<Slug, DocPageData> = {
       { id: "vbw-3", url: "/backwall/backlite-mld.jpg", lokasi: "Jl. Raya Pantai Prigi, Trenggalek", tanggal: "2024-11-24", caption: "Backlite MLD", subCategory: "visual-backwall" },
 
       // --- PJU ---
-      { id: "pju-1", url: "/pju/pju-safari.jpg", lokasi: "Jl. Apel, Jakarta", tanggal: "2024-11-06", caption: "PJU DJARUM Safari", subCategory: "pju" },
+      { id: "pju-1", url: "/pju/pju-safari-fiks.jpg", lokasi: "Jl. Apel, Jakarta", tanggal: "2024-11-06", caption: "PJU DJARUM Safari", subCategory: "pju" },
       { id: "pju-2", url: "/pju/pju-trenggalek.jpg", lokasi: "Jl. Mangga, Jakarta", tanggal: "2024-11-07", caption: "PJU Trenggalek", subCategory: "pju" },
-      { id: "pju-3", url: "/pju/pju-76mangga.jpg", lokasi: "Jl. Safari, Jakarta", tanggal: "2024-11-08", caption: "PJU 76 Mangga", subCategory: "pju" },
+      { id: "pju-3", url: "/pju/pju-76mangga-fiks.jpg", lokasi: "Jl. Safari, Jakarta", tanggal: "2024-11-08", caption: "PJU 76 Mangga", subCategory: "pju" },
       { id: "pju-4", url: "/pju/pju-djarum.jpg", lokasi: "Jl. Apel, Jakarta", tanggal: "2024-11-06", caption: "PJU DJARUM Super", subCategory: "pju" },
-      { id: "pju-5", url: "/pju/pju-laice.jpg", lokasi: "Jl. Mangga, Jakarta", tanggal: "2024-11-07", caption: "PJU Trenggalek", subCategory: "pju" },
-      { id: "pju-6", url: "/pju/pju-royal.jpg", lokasi: "Jl. Safari, Jakarta", tanggal: "2024-11-08", caption: "PJU 76 Mangga", subCategory: "pju" },
+      { id: "pju-5", url: "/pju/pju-laice.jpg", lokasi: "Jl. Mangga, Jakarta", tanggal: "2024-11-07", caption: "PJU LA Ice", subCategory: "pju" },
+      { id: "pju-6", url: "/pju/pju-royal-fiks.jpg", lokasi: "Jl. Safari, Jakarta", tanggal: "2024-11-08", caption: "PJU 76 Mangga", subCategory: "pju" },
 
       // --- Road Sign ---
       { id: "roadsign-1", url: "/roadsign/road-sign-76mangga-fiks.jpg", lokasi: "Jl. Mangga, Jakarta", tanggal: "2024-11-10", caption: "Road Sign Djarum 76 Mangga", subCategory: "road-sign" },
@@ -205,7 +198,7 @@ const db: Record<Slug, DocPageData> = {
   "dokumentasi-pembangunan": {
     title: "Dokumentasi Pekerjaan Pembangunan",
     topLevel: "building",
-    hero: "/maintenance-perbaikan.jpg", // bisa diganti dengan gambar hero lain
+    hero: "/bangunan.jpg", // bisa diganti dengan gambar hero lain
     items: [
       {
         id: "bangun-1",
@@ -298,6 +291,20 @@ const db: Record<Slug, DocPageData> = {
         tanggal: "2024-09-22",
         caption: "Pembangunan lantai teras Indomaret",
       },
+      {
+        id: "bangun-14",
+        url: "/bangunan/bangun-lantai-tambahan.jpg",
+        lokasi: "Workshop UMKM, Malang",
+        tanggal: "2024-09-22",
+        caption: "Pembangunan lantai tambahan swalayan",
+      },
+      {
+        id: "bangun-15",
+        url: "/bangunan/kanopi-apotek.jpg",
+        lokasi: "Workshop UMKM, Malang",
+        tanggal: "2024-09-22",
+        caption: "Pembangunan kanopi apotek",
+      },
     ],
   },
 
@@ -305,11 +312,11 @@ const db: Record<Slug, DocPageData> = {
   "dokumentasi-kelistrikan": {
     title: "Dokumentasi Pekerjaan Kelistrikan",
     topLevel: "maintenance",
-    hero: "/apartment-electrical-system-installation.jpg",
+    hero: "/listrik2.jpg",
     items: [
       {
         id: "listrik-1",
-        url: "/listrik/maintenance-lampu-baliho.jpg",
+        url: "/listrik/bangun-ac.jpg",
         lokasi: "Area Billboard Utama, Jakarta",
         tanggal: "2024-09-01",
         caption: "Perbaikan lampu penerangan baliho",
@@ -349,6 +356,27 @@ const db: Record<Slug, DocPageData> = {
         tanggal: "2024-09-08",
         caption: "Penambahan & pengetesan stop-kontak",
       },
+      {
+        id: "listrik-7",
+        url: "/listrik/maintenance-cctv2.jpg",
+        lokasi: "Ruang Panel, Jakarta",
+        tanggal: "2024-09-06",
+        caption: "Pemasangan CCTV rumah",
+      },
+      {
+        id: "listrik-8",
+        url: "/listrik/maintenance-panel-thermograph.jpg",
+        lokasi: "Area Layanan Pelanggan, Jakarta",
+        tanggal: "2024-09-08",
+        caption: "Maintenance dan perawatan panel thermograph",
+      },
+      {
+        id: "listrik-9",
+        url: "/listrik/maintenance-penambahan-lampu.jpg",
+        lokasi: "Area Layanan Pelanggan, Jakarta",
+        tanggal: "2024-09-08",
+        caption: "Penambahan lampu apotek",
+      },
     ],
   },
 
@@ -356,7 +384,7 @@ const db: Record<Slug, DocPageData> = {
   "dokumentasi-maintenance": {
     title: "Dokumentasi Pekerjaan Maintenance",
     topLevel: "maintenance",
-    hero: "/luxury-hotel-building-maintenance.jpg",
+    hero: "/maintenance2.jpg",
     items: [
       {
         id: "mt-1",
@@ -381,10 +409,10 @@ const db: Record<Slug, DocPageData> = {
       },
       {
         id: "mt-4",
-        url: "/maintenance/maintenance-lan.jpg",
+        url: "/maintenance/maintenance-brankas.jpg",
         lokasi: "Kantor Pusat, Jakarta",
         tanggal: "2024-10-04",
-        caption: "Penataan tray & patch panel LAN",
+        caption: "Perbaikan brankas",
       },
       {
         id: "mt-5",
