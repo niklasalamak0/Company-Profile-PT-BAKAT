@@ -145,6 +145,7 @@ const db: Record<Slug, DocPageData> = {
       { id: "roadsign-1", url: "/roadsign/road-sign-76mangga-fiks.jpg", lokasi: "Jl. Mangga, Jakarta", tanggal: "2024-11-10", caption: "Road Sign Djarum 76 Mangga", subCategory: "road-sign" },
       { id: "roadsign-2", url: "/roadsign/road-sign-mld-fiks.jpg", lokasi: "Jl. MLD, Jakarta", tanggal: "2024-11-14", caption: "Road Sign MLD", subCategory: "road-sign" },
       { id: "roadsign-3", url: "/roadsign/road-sign-raptor-fiks.jpg", lokasi: "Jl. Raptor, Jakarta", tanggal: "2024-11-15", caption: "Road Sign Raptor", subCategory: "road-sign" },
+      { id: "roadsign-4", url: "/roadsign/klinik-kmu.jpg", lokasi: "Jl. Raptor, Jakarta", tanggal: "2024-11-15", caption: "Road Sign Klinik Mata KMU Trenggalek", subCategory: "road-sign" },
 
       // --- Panel Toko ---
       { id: "paneltoko-1", url: "/paneltoko/drp-ukuran-1x5m.jpg", lokasi: "Outlet Jakarta", tanggal: "2024-11-02", caption: "Panel Toko ukuran 1 x 5 m", subCategory: "panel-toko" },

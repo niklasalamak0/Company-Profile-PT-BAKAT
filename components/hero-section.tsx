@@ -30,10 +30,10 @@ export function HeroSection() {
             <div className="space-y-4">
               <div className="space-y-4">
                 <h1 className="flex flex-wrap items-center gap-3 text-4xl font-bold text-gray-900 md:text-5xl leading-tight">
-                  Solusi Lengkap untuk Kebutuhan Advertising dan Mechanical Electrical Anda
+                  Solusi lengkap kebutuhan advertising dan masalah teknik bisnis ada disini
                 </h1>
                 <p className="text-lg text-gray-600">
-                  Kami adalah mitra terpercaya yang siap membantu bisnis Anda bersinar melalui solusi visual dan fungsional yang inovatif.
+                  Kami team BAKAT  siap menjadi mitra Bisnis anda Siap membantu bisnis anda Bersinar melalui solusi dan fungsional yg inovatif
                 </p>
               </div>
             </div>
