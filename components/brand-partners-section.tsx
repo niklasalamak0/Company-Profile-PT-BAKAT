@@ -33,7 +33,7 @@ const groupedPartners: Record<string, BrandPartner[]> = {
   "Grup Industri Rokok": [
     { id: "djarum", name: "PT DJARUM", category: "client", logo_url: "/pt-djarum-logo.jpeg" },
     { id: "wikatama", name: "PT WIKATAMA INDAH SIGARET", category: "client" },
-    { id: "sumber-cipta-multiniaga", name: "PT SUMBER CIPTA MULTINIAGA", category: "client" logo_url: "/pt-sumbercipta.jpeg" },
+    { id: "sumber-cipta-multiniaga", name: "PT SUMBER CIPTA MULTINIAGA", category: "client", logo_url: "/pt-sumbercipta.jpeg" },
     { id: "maju-abadi-sigaret", name: "PT MAJU ABADI SIGARET", category: "client" },
     { id: "chandra-asri-mulia-abadi", name: "PT CHANDRA ASRI MULIA ABADI", category: "client" },
     { id: "roberto-prima-tobacco", name: "PT ROBERTO PRIMA TOBACCO", category: "client" },
