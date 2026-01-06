@@ -30,7 +30,7 @@ export function HeroSection() {
             <div className="space-y-4">
               <div className="space-y-4">
                 <h1 className="flex flex-wrap items-center gap-3 text-4xl font-bold text-gray-900 md:text-5xl leading-tight">
-                  Solusi lengkap kebutuhan advertising dan masalah teknik bisnis ada disini
+                  Solusi Lengkap Kebutuhan Advertising dan Masalah Teknik Bisnis Ada Disini
                 </h1>
                 <p className="text-lg text-gray-600">
                   Kami team BAKAT  siap menjadi mitra Bisnis anda Siap membantu bisnis anda Bersinar melalui solusi dan fungsional yg inovatif
@@ -45,7 +45,7 @@ export function HeroSection() {
                 <div className="text-sm text-gray-600">Proyek Selesai</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-blue-600">3+</div>
+                <div className="text-3xl font-bold text-blue-600">7+</div>
                 <div className="text-sm text-gray-600">Tahun Pengalaman</div>
               </div>
               <div className="text-center">

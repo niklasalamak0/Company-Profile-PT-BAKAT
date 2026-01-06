@@ -44,20 +44,9 @@ export function Footer() {
               />
             </div>
             <p className="text-gray-300 mb-6 leading-relaxed">
-              Solusi terpadu periklanan dan building mechanical electrical dengan pengalaman lebih dari 3 tahun,
+              Solusi terpadu periklanan dan building mechanical electrical dengan pengalaman lebih dari 7 tahun sejak 2018,
               melayani berbagai klien di Trenggalek, Tulungagung dan sekitarnya.
             </p>
-            <div className="flex space-x-4">
-              <a href="#" className="bg-gray-800 p-2 rounded-lg hover:bg-orange-500 transition-colors" aria-label="Facebook">
-                <Facebook className="w-5 h-5" />
-              </a>
-              <a href="#" className="bg-gray-800 p-2 rounded-lg hover:bg-orange-500 transition-colors" aria-label="Instagram">
-                <Instagram className="w-5 h-5" />
-              </a>
-              <a href="#" className="bg-gray-800 p-2 rounded-lg hover:bg-orange-500 transition-colors" aria-label="LinkedIn">
-                <Linkedin className="w-5 h-5" />
-              </a>
-            </div>
           </div>
 
           {/* Services */}

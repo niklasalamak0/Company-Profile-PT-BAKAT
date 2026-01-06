@@ -282,6 +282,44 @@ export function ContactSection() {
                 >
                   {isSubmitting ? "Mengirim…" : <>Kirim Pesan <Send className="w-4 h-4 ml-2" /></>}
                 </Button>
+                {/* Divider */}
+<div className="relative my-6">
+  <div className="absolute inset-0 flex items-center">
+    <span className="w-full border-t border-gray-200" />
+  </div>
+  <div className="relative flex justify-center text-xs uppercase">
+    <span className="bg-white px-3 text-gray-500">
+      atau
+    </span>
+  </div>
+</div>
+
+{/* WhatsApp Quick Chat */}
+<a
+  href={`https://wa.me/6281330602901?text=${encodeURIComponent(
+    "Halo PT Bakti Karya Teknik, saya ingin konsultasi layanan."
+  )}`}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="
+    flex items-center justify-center gap-3
+    w-full rounded-lg
+    border border-green-500
+    bg-green-50
+    px-4 py-3
+    font-semibold text-green-700
+    hover:bg-green-100
+    transition
+  "
+>
+  <Phone className="w-5 h-5" />
+  Chat Langsung via WhatsApp
+</a>
+
+<p className="text-xs text-center text-gray-500 mt-2">
+  Respon cepat • Tidak perlu isi form
+</p>
+
               </form>
             </CardContent>
           </Card>

@@ -193,6 +193,7 @@ const db: Record<Slug, DocPageData> = {
       { id: "event-9", url: "/event/vb-event.jpg", lokasi: "Tulungagung", tanggal: "2024-11-21", caption: "Vertical Banner Event", subCategory: "event" },
 
       { id: "umbul-umbul-1", url: "/event/umbul-umbul-event.jpg", lokasi: "GOR Lembu Peteng Tulungagung", tanggal: "2024-11-20", caption: "Pemasangan Umbul-Umbul", subCategory: "umbul-umbul" },
+      { id: "umbul-umbul-2", url: "/event/umbul-umbul-klinik-kmu.jpg", lokasi: "GOR Lembu Peteng Tulungagung", tanggal: "2024-11-20", caption: "Pemasangan Umbul-Umbul Klinik Mata KMU Trenggalek", subCategory: "umbul-umbul" },
     ],
   },
     

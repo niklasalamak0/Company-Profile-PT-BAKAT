@@ -33,11 +33,12 @@ const groupedPartners: Record<string, BrandPartner[]> = {
   "Grup Industri Rokok": [
     { id: "djarum", name: "PT DJARUM", category: "client", logo_url: "/pt-djarum-logo.jpeg" },
     { id: "wikatama", name: "PT WIKATAMA INDAH SIGARET", category: "client" },
-    { id: "sumber-cipta-multiniaga", name: "PT SUMBER CIPTA MULTINIAGA", category: "client" },
+    { id: "sumber-cipta-multiniaga", name: "PT SUMBER CIPTA MULTINIAGA", category: "client" logo_url: "/pt-sumbercipta.jpeg" },
     { id: "maju-abadi-sigaret", name: "PT MAJU ABADI SIGARET", category: "client" },
     { id: "chandra-asri-mulia-abadi", name: "PT CHANDRA ASRI MULIA ABADI", category: "client" },
     { id: "roberto-prima-tobacco", name: "PT ROBERTO PRIMA TOBACCO", category: "client" },
     { id: "mitra-pratama-integra", name: "PT MITRA PRATAMA INTEGRA", category: "client" },
+    { id: "jamrud khatulistiwa", name: "PT JAMRUD KHATULISTIWA TOBACCO", category: "client" logo_url: "/pt-jamrud.jpeg" },
   ],
   "Vendor & Advertising Lokal": [
     { id: "advertindo", name: "CV ADVERTINDO JAYA MAKMUR DINAMIKA", category: "client" },
@@ -45,12 +46,14 @@ const groupedPartners: Record<string, BrandPartner[]> = {
     { id: "multi-indo-perkasa", name: "CV MULTI INDO PERKASA", category: "client" },
   ],
   "Cafe & F&B": [
-    { id: "madju-jaya-cafe", name: "MADJU JAYA CAFE", category: "client" },
-    { id: "moro-moro-cafe", name: "MORO MORO CAFE", category: "client" },
-    { id: "balok-kayu-cafe", name: "BALOK KAYU CAFE", category: "client" },
-    { id: "ammor-coffee-and-space", name: "AMMOR COFFEE AND SPACE", category: "client" },
-    { id: "ruang-luang", name: "RUANG LUANG", category: "client" },
-    { id: "jeruk-peras-qu", name: "JERUK PERAS QU", category: "client" },
+    { id: "madju-jaya-cafe", name: "MADJU JAYA CAFE", category: "client" logo_url: "/madju-djaja.jpg"},
+    { id: "moro-moro-cafe", name: "MORO MORO CAFE", category: "client" logo_url: "/moro-moro.jpeg"},
+    { id: "balok-kayu-cafe", name: "BALOK KAYU CAFE", category: "client" logo_url: "/balok-kayu-logo.jpeg"},
+    { id: "ammor-coffee-and-space", name: "AMMOR COFFEE AND SPACE", category: "client" logo_url: "/ammor.jpeg"},
+    { id: "ruang-luang", name: "RUANG LUANG", category: "client" logo_url: "/ruang-luang.jpeg"},
+    { id: "jeruk-peras-qu", name: "JERUK PERAS QU", category: "client" logo_url: "/jeruk-peras.jpeg"},
+    { id: "two d coffee", name: "TWO D COFFEE", category: "client" logo_url: "/two-darah.jpeg"},
+    { id: "sobat es teh", name: "SOBAT ES TEH", category: "client" logo_url: "/sobat-es-teh.jpeg"},
   ],
 }
 
