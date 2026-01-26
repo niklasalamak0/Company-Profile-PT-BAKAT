@@ -348,8 +348,15 @@ export function ContactSection() {
             </div>
 
             <Card className="overflow-hidden">
-              <div className="relative h-64 sm:h-80">
-                <iframe src="https://www.google.com/maps/embed?pb=!4v1769406456338!6m8!1m7!1sVRpwPeGns6FA5EPt_XBDRg!2m2!1d-8.097207139604654!2d111.7479268262208!3f237.23758469014885!4f-9.141896495114267!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <div className="relative h-64 sm:h-80 w-full">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!4v1769406456338!6m8!1m7!1sVRpwPeGns6FA5EPt_XBDRg!2m2!1d-8.097207139604654!2d111.7479268262208!3f237.23758469014885!4f-9.141896495114267!5f0.7820865974627469"
+                  className="absolute inset-0 h-full w-full"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
                 <a
                   href="https://maps.app.goo.gl/5XQ2xJpgMfUCH18G6"
                   target="_blank"
@@ -360,6 +367,7 @@ export function ContactSection() {
                 </a>
               </div>
             </Card>
+
           </div>
         </div>
       </div>
