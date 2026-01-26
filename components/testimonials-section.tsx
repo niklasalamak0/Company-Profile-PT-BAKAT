@@ -27,61 +27,15 @@ interface Testimonial {
 
 const testimonials: Testimonial[] = [
   // =============================
-  // INDUSTRI ROKOK
+  // CUSTOMER UMUM / UMKM
   // =============================
   {
-    id: "br-rokok-1",
-    client_name: "PT DJARUM",
-    client_position: "Brand Activation Team",
-    client_company: "PT DJARUM",
-    testimonial:
-      "Kerja sama branding berjalan sesuai standar korporasi. Mulai dari shop sign, billboard, hingga materi visual lapangan dikerjakan presisi dan konsisten.\n\nTim mampu mengikuti guideline ketat industri rokok dan menjaga kualitas produksi di setiap titik pemasangan.",
-    rating: 5,
-    service_category: "advertising",
-    is_featured: true,
-    project_scope: "Shop sign, billboard, branding area distribusi",
-    location: "Jawa Timur",
-    date_str: "Jan 2025",
-  },
-  {
-    id: "br-rokok-2",
-    client_name: "PT WIKATAMA INDAH SIGARET",
-    client_position: "Marketing Division",
-    client_company: "PT WIKATAMA INDAH SIGARET",
-    testimonial:
-      "Vendor yang memahami ritme industri rokok. Koordinasi cepat, hasil rapi, dan mampu menyesuaikan kebutuhan branding lintas lokasi.",
-    rating: 5,
-    service_category: "advertising",
-    is_featured: false,
-    project_scope: "Branding outlet & media promosi",
-    location: "Nasional",
-    date_str: "Des 2024",
-  },
-  {
-    id: "br-rokok-3",
-    client_name: "PT JAMRUD KHATULISTIWA TOBACCO",
-    client_position: "Corporate Branding",
-    client_company: "PT JAMRUD KHATULISTIWA TOBACCO",
-    testimonial:
-      "Pendekatan kerja profesional dan sistematis. Kami terbantu dalam menjaga konsistensi visual brand di berbagai titik distribusi.",
-    rating: 5,
-    service_category: "advertising",
-    is_featured: false,
-    project_scope: "Branding korporat",
-    location: "Jawa Tengah",
-    date_str: "Nov 2024",
-  },
-
-  // =============================
-  // PERUSAHAAN & UMUM
-  // =============================
-  {
-    id: "br-umum-1",
+    id: "umkm-1",
     client_name: "APOTEK K24",
     client_position: "Manajemen Cabang",
     client_company: "APOTEK K24",
     testimonial:
-      "Neon box dan signage fasad dikerjakan sesuai standar brand nasional. Visibilitas outlet meningkat dan tampilan lebih profesional.",
+      "Signage dan neon box dikerjakan rapi serta sesuai identitas brand. Tampilan outlet jadi lebih jelas dan mudah dikenali dari jalan utama.",
     rating: 5,
     service_category: "advertising",
     is_featured: true,
@@ -90,44 +44,58 @@ const testimonials: Testimonial[] = [
     date_str: "Jan 2025",
   },
   {
-    id: "br-umum-2",
+    id: "umkm-2",
     client_name: "SWALAYAN KARANGANOM",
     client_position: "Owner",
     client_company: "SWALAYAN KARANGANOM",
     testimonial:
-      "Branding toko terlihat jauh lebih modern. Tata visual rapi dan mudah dikenali pelanggan, terutama dari arah jalan utama.",
+      "Branding toko terlihat lebih modern dan profesional. Banyak pelanggan baru yang bilang toko kami sekarang lebih mudah ditemukan.",
     rating: 5,
     service_category: "advertising",
     is_featured: false,
-    project_scope: "Branding toko & signage",
+    project_scope: "Branding toko & shop sign",
     location: "Trenggalek",
-    date_str: "Okt 2024",
+    date_str: "Des 2024",
   },
   {
-    id: "br-umum-3",
-    client_name: "WISCO ICE",
-    client_position: "Business Owner",
-    client_company: "WISCO ICE",
+    id: "umkm-3",
+    client_name: "LAUNDRY AZKA",
+    client_position: "Owner",
+    client_company: "LAUNDRY AZKA",
     testimonial:
-      "Brand kami jadi terlihat lebih siap scale-up. Materi branding konsisten dan cocok untuk kebutuhan distribusi produk.",
+      "Desain sederhana tapi efektif. Signage baru membuat usaha kami terlihat lebih terpercaya dan rapi.",
     rating: 5,
     service_category: "advertising",
     is_featured: false,
-    project_scope: "Branding UMKM",
+    project_scope: "Branding usaha laundry",
+    location: "Trenggalek",
+    date_str: "Nov 2024",
+  },
+  {
+    id: "umkm-4",
+    client_name: "RUMAH HIJAB AISYAH",
+    client_position: "Founder",
+    client_company: "RUMAH HIJAB AISYAH",
+    testimonial:
+      "Branding visual membantu meningkatkan kepercayaan pembeli. Tampilan toko dan materi promosi jadi lebih konsisten.",
+    rating: 5,
+    service_category: "advertising",
+    is_featured: false,
+    project_scope: "Branding UMKM fashion",
     location: "Jawa Timur",
-    date_str: "Sep 2024",
+    date_str: "Okt 2024",
   },
 
   // =============================
-  // CAFE & F&B (CUP PRODUK)
+  // CAFE & F&B (CUSTOM CUP)
   // =============================
   {
-    id: "br-fnb-1",
+    id: "cafe-1",
     client_name: "MADJU JAYA CAFE",
     client_position: "Management",
     client_company: "MADJU JAYA CAFE",
     testimonial:
-      "Custom cup minuman membantu memperkuat identitas brand kami. Desain simpel namun elegan, cocok untuk konsep cafe kami.",
+      "Custom cup minuman sangat membantu membangun identitas brand. Desainnya clean dan cocok dengan konsep cafe kami.",
     rating: 5,
     service_category: "advertising",
     is_featured: true,
@@ -136,12 +104,12 @@ const testimonials: Testimonial[] = [
     date_str: "Jan 2025",
   },
   {
-    id: "br-fnb-2",
+    id: "cafe-2",
     client_name: "BALOK KAYU CAFE",
     client_position: "Owner",
     client_company: "BALOK KAYU CAFE",
     testimonial:
-      "Cup dan materi branding membuat produk terlihat lebih premium. Banyak pelanggan mengunggah minuman kami ke media sosial.",
+      "Cup branding membuat produk terlihat lebih premium. Banyak pelanggan mengunggah minuman kami ke media sosial.",
     rating: 5,
     service_category: "advertising",
     is_featured: false,
@@ -150,12 +118,12 @@ const testimonials: Testimonial[] = [
     date_str: "Des 2024",
   },
   {
-    id: "br-fnb-3",
+    id: "cafe-3",
     client_name: "AMMOR COFFEE AND SPACE",
-    client_position: "Brand Manager",
+    client_position: "Brand Team",
     client_company: "AMMOR COFFEE AND SPACE",
     testimonial:
-      "Pendekatan desainnya relevan dengan market kami. Cup branding membantu membangun kesan profesional sejak first impression.",
+      "Desain cup relevan dengan market kami. Branding terasa konsisten dan meningkatkan kesan profesional.",
     rating: 5,
     service_category: "advertising",
     is_featured: false,
@@ -164,34 +132,30 @@ const testimonials: Testimonial[] = [
     date_str: "Nov 2024",
   },
   {
-    id: "br-fnb-4",
+    id: "cafe-4",
+    client_name: "RUANG LUANG",
+    client_position: "Owner",
+    client_company: "RUANG LUANG",
+    testimonial:
+      "Cup minuman membantu memperkuat karakter brand kami. Simple tapi mudah diingat pelanggan.",
+    rating: 5,
+    service_category: "advertising",
+    is_featured: false,
+    project_scope: "Cup minuman cafe",
+    location: "Trenggalek",
+    date_str: "Okt 2024",
+  },
+  {
+    id: "cafe-5",
     client_name: "SOBAT ES TEH",
     client_position: "Operational Team",
     client_company: "SOBAT ES TEH",
     testimonial:
-      "Produksi cup stabil dan konsisten. Sangat membantu operasional harian dan citra brand di lapangan.",
+      "Produksi cup stabil dan kualitas konsisten. Sangat membantu operasional harian outlet kami.",
     rating: 5,
     service_category: "advertising",
     is_featured: false,
     project_scope: "Cup minuman F&B",
-    location: "Jawa Timur",
-    date_str: "Okt 2024",
-  },
-
-  // =============================
-  // VENDOR & ADVERTISING
-  // =============================
-  {
-    id: "br-vendor-1",
-    client_name: "CV ADVERTINDO JAYA MAKMUR DINAMIKA",
-    client_position: "Project Manager",
-    client_company: "CV ADVERTINDO JAYA MAKMUR DINAMIKA",
-    testimonial:
-      "Kolaborasi antar vendor berjalan sehat. Kualitas produksi dan komitmen deadline sangat bisa diandalkan.",
-    rating: 5,
-    service_category: "advertising",
-    is_featured: false,
-    project_scope: "Sub-kontrak produksi branding",
     location: "Jawa Timur",
     date_str: "Sep 2024",
   },
