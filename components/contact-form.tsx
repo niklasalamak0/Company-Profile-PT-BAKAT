@@ -359,7 +359,7 @@ export function ContactSection() {
                   referrerPolicy="no-referrer-when-downgrade"
                 />
                 <a
-                  href="https://maps.app.goo.gl/rgoSXEeynbCDjTVv5"
+                  href="https://maps.app.goo.gl/5XQ2xJpgMfUCH18G6"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="absolute bottom-2 right-2 rounded-md bg-white px-3 py-1 text-sm font-medium text-orange-600 shadow hover:bg-orange-50"
