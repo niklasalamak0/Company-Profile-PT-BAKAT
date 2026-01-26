@@ -348,18 +348,17 @@ export function ContactSection() {
             </div>
 
             <Card className="overflow-hidden">
-              <div className="relative h-64 sm:h-80">
+              <div className="relative h-64 sm:h-80 w-full">
                 <iframe
-                  title="Lokasi PT. Bakti Karya Teknik"
-                  src="https://www.google.com/maps/embed?pb=!4v1757582088138!6m8!1m7!1smVUwwmiZholAgsYs65A9EA!2m2!1d-8.097551775663405!2d111.7478182940659!3f338.73788942480724!4f-12.184788472723397!5f0.7820865974627469"
+                  src="https://www.google.com/maps/embed?pb=!4v1769406456338!6m8!1m7!1sVRpwPeGns6FA5EPt_XBDRg!2m2!1d-8.097207139604654!2d111.7479268262208!3f237.23758469014885!4f-9.141896495114267!5f0.7820865974627469"
                   className="absolute inset-0 h-full w-full"
                   style={{ border: 0 }}
-                  loading="lazy"
                   allowFullScreen
+                  loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                 />
                 <a
-                  href="https://maps.app.goo.gl/rgoSXEeynbCDjTVv5"
+                  href="https://maps.app.goo.gl/5XQ2xJpgMfUCH18G6"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="absolute bottom-2 right-2 rounded-md bg-white px-3 py-1 text-sm font-medium text-orange-600 shadow hover:bg-orange-50"
@@ -368,6 +367,7 @@ export function ContactSection() {
                 </a>
               </div>
             </Card>
+
           </div>
         </div>
       </div>
