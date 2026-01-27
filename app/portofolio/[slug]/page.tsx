@@ -517,13 +517,13 @@ export default function DocCategoryPage({
 
         {data.hero && (
         <div className="relative mb-8 w-full overflow-hidden rounded-2xl shadow-lg aspect-[25/10]">
-            <Image
-            src={data.hero}
-            alt={data.title}
-            fill
-            priority
-            className="object-cover"
-            />
+<Image
+  src={item.image}
+  fill
+  className="object-contain bg-white"
+  sizes="(max-width:768px) 100vw, 33vw"
+/>
+
         </div>
         )}
 
