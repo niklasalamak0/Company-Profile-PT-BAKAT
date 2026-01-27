@@ -515,23 +515,24 @@ export default function DocCategoryPage({
 
         </div>
 
-        {data.hero && (
-<div
-  className="
-    relative mb-8 w-full overflow-hidden rounded-2xl shadow-lg
-    aspect-[4/3] sm:aspect-[25/10]
-    bg-white
-  "
->
-  <Image
-    src={item.image}
-    fill
-    className="object-contain p-3"
-    sizes="(max-width:640px) 100vw, 80vw"
-  />
-</div>
+{data.hero && (
+  <div
+    className="
+      relative mb-8 w-full overflow-hidden rounded-2xl shadow-lg
+      aspect-[4/3] sm:aspect-[25/10]
+      bg-white
+    "
+  >
+    <Image
+      src={data.hero}
+      fill
+      className="object-contain p-3"
+      sizes="(max-width:640px) 100vw, 80vw"
+      alt="Hero Portofolio"
+    />
+  </div>
+)}
 
-        )}
 
         {/* Filter sub-kategori khusus advertising */}
         {data.topLevel === "advertising" && (
