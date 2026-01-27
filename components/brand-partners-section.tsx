@@ -109,34 +109,37 @@ function PartnerTile({ name, logo_url }: { name: string; logo_url?: string }) {
       title={name}
       role="listitem"
     >
-      {/* LOGO */}
-      <div className="flex items-center justify-center">
-        {logo_url ? (
-          <div
-            className={`relative ${
-              wide
-                ? "h-20 w-40 sm:h-24 sm:w-48"
-                : "h-24 w-24 sm:h-28 sm:w-28"
-            }`}
-          >
-            <Image
-              src={logo_url}
-              alt={name}
-              fill
-              className="object-contain"
-              sizes={
-                wide
-                  ? "(max-width: 640px) 160px, 192px"
-                  : "(max-width: 640px) 96px, 112px"
-              }
-            />
-          </div>
-        ) : (
-          <div className="flex h-24 w-24 items-center justify-center rounded-lg bg-white border border-gray-100">
-            {defaultIconFor(name)}
-          </div>
-        )}
+{/* LOGO */}
+<div className="flex items-center justify-center">
+  {logo_url ? (
+    <div
+      className={`flex items-center justify-center rounded-lg bg-white border border-gray-100 shadow-sm ${
+        wide
+          ? "h-20 w-40 sm:h-24 sm:w-48"
+          : "h-24 w-24 sm:h-28 sm:w-28"
+      }`}
+    >
+      <div className="relative h-full w-full p-3">
+        <Image
+          src={logo_url}
+          alt={name}
+          fill
+          className="object-contain"
+          sizes={
+            wide
+              ? "(max-width: 640px) 160px, 192px"
+              : "(max-width: 640px) 96px, 112px"
+          }
+        />
       </div>
+    </div>
+  ) : (
+    <div className="flex h-24 w-24 items-center justify-center rounded-lg bg-white border border-gray-100 shadow-sm">
+      {defaultIconFor(name)}
+    </div>
+  )}
+</div>
+
 
       {/* NAMA */}
       <span className="text-sm font-medium text-gray-900 leading-tight break-words max-w-[160px]">
