@@ -47,7 +47,7 @@ const docCategories: DocCategory[] = [
     summary:
       "Pekerjaan konstruksi gedung termasuk struktur, plumbing, roofing, dan cleaning.",
     topLevel: "building",
-    cover_url: "/dokumentasi-bangunan.jpg",
+    cover_url: "/dokumentasi-bangunan.png",
     // ✅ pakai nama layanan resmi
     tags: [
       "Perawatan & Perbaikan Bangunan",
