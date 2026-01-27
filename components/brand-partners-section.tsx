@@ -102,13 +102,22 @@ function PartnerTile({ name, logo_url }: { name: string; logo_url?: string }) {
   const wide = isWideLogo(name)
 
   return (
-    <div
-      className={`flex flex-col items-center justify-center gap-3 rounded-xl border border-gray-200 ${pastelFromName(
-        name
-      )} p-5 shadow-sm transition-all hover:shadow-md text-center`}
-      title={name}
-      role="listitem"
-    >
+<div
+  className="
+    flex flex-col items-center justify-center
+    gap-4
+    rounded-2xl
+    border border-gray-200
+    bg-white
+    p-8
+    shadow-sm
+    transition-all
+    hover:-translate-y-1
+    hover:shadow-lg
+    text-center
+  "
+>
+
 {/* LOGO */}
 <div className="flex items-center justify-center">
   {logo_url ? (
