@@ -99,19 +99,18 @@ function PartnerTile({ name, logo_url }: { name: string; logo_url?: string }) {
       title={name}
       role="listitem"
     >
-      <div className="flex h-14 w-14 items-center justify-center rounded-lg bg-white overflow-hidden border border-gray-100">
-        {logo_url ? (
-          <Image
-            src={logo_url}
-            alt={name}
-            width={100}
-            height={100}
-            className="object-contain"
-          />
-        ) : (
-          defaultIconFor(name)
-        )}
-      </div>
+<div className="flex h-20 w-20 items-center justify-center rounded-xl bg-white border border-gray-100 p-2">
+  {logo_url ? (
+    <Image
+      src={logo_url}
+      alt={name}
+      fill
+      className="object-contain"
+    />
+  ) : (
+    defaultIconFor(name)
+  )}
+</div>
       <span className="text-sm font-medium text-gray-900 leading-tight break-words max-w-[140px]">
         {name}
       </span>
