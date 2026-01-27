@@ -214,14 +214,14 @@ const db: Record<Slug, DocPageData> = {
         url: "/bangunan/bangun-sanyo.jpg",
         lokasi: "Perumahan Sanyo, Bekasi",
         tanggal: "2024-09-11",
-        caption: "Pembangunan instalasi Sanyo",
+        caption: "Pembangunan instalasi pompa air",
       },
       {
         id: "bangun-3",
         url: "/bangunan/bangun-tutup-saluran-air.jpg",
         lokasi: "Saluran Air, Jakarta",
         tanggal: "2024-09-12",
-        caption: "Pembangunan penutup saluran air",
+        caption: "Pembangunan penutup saluran drainase",
       },
       {
         id: "bangun-4",
@@ -242,7 +242,7 @@ const db: Record<Slug, DocPageData> = {
         url: "/bangunan/bangun-panggung-tenda.jpg",
         lokasi: "Event Outdoor, Bandung",
         tanggal: "2024-09-15",
-        caption: "Pembuatan panggung dan tenda acara",
+        caption: "Pembuatan panggung dan tenda event",
       },
       {
         id: "bangun-7",
@@ -321,7 +321,7 @@ const db: Record<Slug, DocPageData> = {
         url: "/listrik/bangun-ac.jpg",
         lokasi: "Area Billboard Utama, Jakarta",
         tanggal: "2024-09-01",
-        caption: "Perbaikan lampu penerangan baliho",
+        caption: "Pemasangan AC",
       },
       {
         id: "listrik-2",
@@ -515,17 +515,24 @@ export default function DocCategoryPage({
 
         </div>
 
-        {data.hero && (
-        <div className="relative mb-8 w-full overflow-hidden rounded-2xl shadow-lg aspect-[25/10]">
-            <Image
-            src={data.hero}
-            alt={data.title}
-            fill
-            priority
-            className="object-cover"
-            />
-        </div>
-        )}
+{data.hero && (
+  <div
+    className="
+      relative mb-8 w-full overflow-hidden rounded-2xl shadow-lg
+      aspect-[4/3] sm:aspect-[25/10]
+      bg-white
+    "
+  >
+    <Image
+      src={data.hero}
+      fill
+      className="object-contain p-3"
+      sizes="(max-width:640px) 100vw, 80vw"
+      alt="Hero Portofolio"
+    />
+  </div>
+)}
+
 
         {/* Filter sub-kategori khusus advertising */}
         {data.topLevel === "advertising" && (
