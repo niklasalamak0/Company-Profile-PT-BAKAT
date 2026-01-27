@@ -84,7 +84,7 @@ export function Footer() {
               <div className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-orange-500 mt-0.5 flex-shrink-0" />
                 <div>
-                  <p className="text-gray-300">03/01 Bendorejo, Pogalan,Trenggalek. JATIM 500 m Selatan Perempatan Polsek Pogalan Selatan Bidan Kasihin</p>
+                  <p className="text-gray-300">03/01 Bendorejo, Pogalan,Trenggalek. 500 m Selatan Perempatan Polsek Pogalan Selatan Bidan Kasihin</p>
                   <p className="text-gray-300">Jawa Timur, Indonesia</p>
                 </div>
               </div>
