@@ -25,7 +25,7 @@ const docCategories: DocCategory[] = [
     summary:
       "Pekerjaan billboard, neon box, shop sign, branding fasad, hingga eksekusi lapangan.",
     topLevel: "advertising",
-    cover_url: "/iklan3.jpg",
+    cover_url: "/dokumentasi-advertising.jpeg",
     // ✅ pakai nama layanan resmi
     tags: ["Advertising & Signage", "Lampu & Penerangan"],
     items_count: 124,
@@ -36,7 +36,7 @@ const docCategories: DocCategory[] = [
     summary:
       "Instalasi panel listrik, MCB, grounding, emergency lighting, audit energi, dan SLO.",
     topLevel: "maintenance",
-    cover_url: "/listrik2.jpg",
+    cover_url: "/dokumentasi-kelistrikan.png",
     // ✅ pakai nama layanan resmi
     tags: ["Mekanik & Elektrik", "Lampu & Penerangan", "Panel"],
     items_count: 57,
@@ -47,7 +47,7 @@ const docCategories: DocCategory[] = [
     summary:
       "Pekerjaan konstruksi gedung termasuk struktur, plumbing, roofing, dan cleaning.",
     topLevel: "building",
-    cover_url: "/bangunan.jpg",
+    cover_url: "/dokumentasi-bangunan.png",
     // ✅ pakai nama layanan resmi
     tags: [
       "Perawatan & Perbaikan Bangunan",
@@ -63,7 +63,7 @@ const docCategories: DocCategory[] = [
     summary:
       "Preventive & corrective maintenance meliputi struktur, plumbing, roofing, hingga cleaning.",
     topLevel: "maintenance",
-    cover_url: "/maintenance2.jpg",
+    cover_url: "/dokumentasi-maintenance.jpeg",
     // ✅ pakai nama layanan resmi
     tags: [
       "Perawatan & Perbaikan Bangunan",
