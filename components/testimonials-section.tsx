@@ -30,20 +30,6 @@ const testimonials: Testimonial[] = [
   // CUSTOMER UMUM / UMKM
   // =============================
   {
-    id: "umkm-1",
-    client_name: "APOTEK K24",
-    client_position: "Manajemen Cabang",
-    client_company: "APOTEK K24",
-    testimonial:
-      "Signage dan neon box dikerjakan rapi serta sesuai identitas brand. Tampilan outlet jadi lebih jelas dan mudah dikenali dari jalan utama.",
-    rating: 5,
-    service_category: "advertising",
-    is_featured: true,
-    project_scope: "Neon box & signage outlet",
-    location: "Jawa Timur",
-    date_str: "Jan 2025",
-  },
-  {
     id: "umkm-2",
     client_name: "SWALAYAN KARANGANOM",
     client_position: "Owner",
