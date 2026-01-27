@@ -188,7 +188,7 @@ export function BrandPartnersSection() {
         {/* === LOOP PER GRUP === */}
         {Object.entries(groupedPartners).map(([groupName, list]) => (
           <div key={groupName} className="mb-12">
-            <h3 className="mb-4 text-lg font-semibold text-gray-800 border-l-4 border-orange-400 pl-3">
+            <h3 className="mb-4 text-lg font-semibold text-gray-800 border-l-4 border-white pl-3">
               {groupName}
             </h3>
             <div
