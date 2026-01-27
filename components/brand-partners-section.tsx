@@ -88,7 +88,7 @@ function defaultIconFor(name: string) {
 }
 
 function isWideLogo(name: string) {
-  return /rokok|sigaret|tobacco|jamrud|mitra|stevania|djarum|sobat|es teh/i.test(
+  return /rokok|sigaret|tobacco|candra|jamrud|stevania|djarum|sobat|es teh/i.test(
     name
   )
 }
