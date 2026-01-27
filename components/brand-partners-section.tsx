@@ -35,7 +35,7 @@ const groupedPartners: Record<string, BrandPartner[]> = {
     { id: "wikatama", name: "PT WIKATAMA INDAH SIGARET", category: "client", logo_url: "/wikatama-indah.jpeg" },
     { id: "sumber-cipta-multiniaga", name: "PT SUMBER CIPTA MULTINIAGA", category: "client", logo_url: "/pt-sumbercipta.jpeg" },
     { id: "maju-abadi-sigaret", name: "PT MAJU ABADI SIGARET", category: "client" },
-    { id: "chandra-asri-mulia-abadi", name: "PT CHANDRA ASRI MULIA ABADI", category: "client", logo_url: "/candra-asri.jpeg" },
+    { id: "chandra-asri-mulia-abadi", name: "PT CHANDRA ASRI MULIA ABADI", category: "client", logo_url: "/candra-asri.jpg" },
     { id: "roberto-prima-tobacco", name: "PT ROBERTO PRIMA TOBACCO", category: "client", logo_url: "/roberto-prima.jpeg" },
     { id: "mitra-pratama-integra", name: "PT MITRA PRATAMA INTEGRA", category: "client", logo_url: "/mitra-logo.jpeg" },
     { id: "jamrud khatulistiwa", name: "PT JAMRUD KHATULISTIWA TOBACCO", category: "client", logo_url: "/pt-jamrud.jpeg" },
