@@ -321,7 +321,7 @@ const db: Record<Slug, DocPageData> = {
         url: "/listrik/bangun-ac.jpg",
         lokasi: "Area Billboard Utama, Jakarta",
         tanggal: "2024-09-01",
-        caption: "Perbaikan lampu penerangan baliho",
+        caption: "Pemasangan AC",
       },
       {
         id: "listrik-2",
