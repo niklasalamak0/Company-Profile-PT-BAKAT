@@ -87,29 +87,57 @@ function defaultIconFor(name: string) {
   return <Building2 className="h-5 w-5 text-gray-500" />
 }
 
+function isWideLogo(name: string) {
+  return /rokok|sigaret|tobacco|jamrud|mitra|stevania|djarum|sobat|es teh/i.test(
+    name
+  )
+}
+
 /* =============================
  * TILE DENGAN LOGO ATAU FALLBACK
  * ============================= */
 function PartnerTile({ name, logo_url }: { name: string; logo_url?: string }) {
+  const wide = isWideLogo(name)
+
   return (
     <div
-      className={`flex flex-col items-center justify-center gap-2 rounded-xl border border-gray-200 ${pastelFromName(
+      className={`flex flex-col items-center justify-center gap-3 rounded-xl border border-gray-200 ${pastelFromName(
         name
-      )} p-4 shadow-sm transition-all hover:shadow-md text-center`}
+      )} p-5 shadow-sm transition-all hover:shadow-md text-center`}
       title={name}
       role="listitem"
     >
-<div className="flex items-center justify-center">
-  <div className="relative h-24 w-24 max-h-24 max-w-24">
-    <Image
-      src={logo_url}
-      alt={name}
-      fill
-      className="object-contain"
-    />
-  </div>
-</div>
-      <span className="text-sm font-medium text-gray-900 leading-tight break-words max-w-[140px]">
+      {/* LOGO */}
+      <div className="flex items-center justify-center">
+        {logo_url ? (
+          <div
+            className={`relative ${
+              wide
+                ? "h-20 w-40 sm:h-24 sm:w-48"
+                : "h-24 w-24 sm:h-28 sm:w-28"
+            }`}
+          >
+            <Image
+              src={logo_url}
+              alt={name}
+              fill
+              className="object-contain"
+              sizes={
+                wide
+                  ? "(max-width: 640px) 160px, 192px"
+                  : "(max-width: 640px) 96px, 112px"
+              }
+            />
+          </div>
+        ) : (
+          <div className="flex h-24 w-24 items-center justify-center rounded-lg bg-white border border-gray-100">
+            {defaultIconFor(name)}
+          </div>
+        )}
+      </div>
+
+      {/* NAMA */}
+      <span className="text-sm font-medium text-gray-900 leading-tight break-words max-w-[160px]">
         {name}
       </span>
     </div>
