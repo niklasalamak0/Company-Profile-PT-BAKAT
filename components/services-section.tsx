@@ -252,15 +252,20 @@ export function ServicesSection() {
               Tim ahli kami siap membantu merencanakan solusi terbaik sesuai kebutuhan dan budget Anda.
             </p>
             <div className="flex flex-col justify-center gap-4 sm:flex-row">
-              <Button size="lg" className="bg-white text-orange-500 hover:bg-gray-100">
-                Konsultasi Gratis
+              <Button size="lg" className="group bg-orange-500 text-white hover:bg-orange-600" asChild>
+                <Link href="/kontak">
+                  Konsultasi Gratis
+                  <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+                </Link>
               </Button>
+
               <Button
                 size="lg"
                 variant="outline"
-                className="bg-transparent border-white text-white hover:bg-white hover:text-orange-500"
+                className="bg-transparent hover:border-orange-500 hover:text-orange-500"
+                asChild
               >
-                Lihat Portofolio
+                <Link href="/portofolio">Lihat Portofolio</Link>
               </Button>
             </div>
           </div>
