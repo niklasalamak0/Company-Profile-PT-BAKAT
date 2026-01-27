@@ -55,7 +55,6 @@ const groupedPartners: Record<string, BrandPartner[]> = {
     { id: "rumah-hijab-aisyah", name: "RUMAH HIJAB AISYAH", category: "client", logo_url: "/rumah-hijab-aisyah.jpg" },
     { id: "apotek-k24", name: "APOTEK K24", category: "client", logo_url: "/apotek-k24.png" },
     { id: "laundry-azka", name: "LAUNDRY AZKA", category: "client", logo_url: "/laundry-azka.jpg" },
-    { id: "swalayan-karanganom", name: "SWALAYAN KARANGANOM", category: "client", logo_url: "/swalayan-karanganom.jpg" },
     { id: "wisco-ice", name: "WISCO ICE", category: "client", logo_url: "/wisco-ice.jpg" },
     { id: "warkop-wbs", name: "WARKOP WBS", category: "client", logo_url: "/warkop-wbs.jpg" },
   ],
