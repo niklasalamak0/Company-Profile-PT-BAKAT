@@ -122,7 +122,7 @@ function PartnerTile({ name, logo_url }: { name: string; logo_url?: string }) {
 <div className="flex items-center justify-center">
   {logo_url ? (
     <div
-      className={`flex items-center justify-center rounded-lg bg-white shadow-sm ${
+      className={`flex items-center justify-center rounded-lg bg-white ${
         wide
           ? "h-20 w-40 sm:h-24 sm:w-48"
           : "h-24 w-24 sm:h-28 sm:w-28"
@@ -143,7 +143,7 @@ function PartnerTile({ name, logo_url }: { name: string; logo_url?: string }) {
       </div>
     </div>
   ) : (
-    <div className="flex h-24 w-24 items-center justify-center rounded-lg bg-white border border-gray-100 shadow-sm">
+    <div className="flex h-24 w-24 items-center justify-center rounded-lg bg-white ">
       {defaultIconFor(name)}
     </div>
   )}
