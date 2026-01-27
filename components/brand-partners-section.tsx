@@ -24,12 +24,12 @@ const groupedPartners: Record<string, BrandPartner[]> = {
   "Grup Industri Rokok": [
     
     { id: "stevania ultra tobacco", name: "PT STEVANIA ULTRA TOBACCO", category: "client", logo_url: "/stevania-ultra.jpeg" },
-    { id: "chandra-asri-mulia-abadi", name: "PT CHANDRA ASRI MULIA ABADI", category: "client", logo_url: "/candra-asri.jpeg" },
     { id: "roberto-prima-tobacco", name: "PT ROBERTO PRIMA TOBACCO", category: "client", logo_url: "/roberto-prima.jpeg" },
     { id: "jamrud khatulistiwa", name: "PT JAMRUD KHATULISTIWA TOBACCO", category: "client", logo_url: "/pt-jamrud.jpeg" },
     { id: "wikatama", name: "PT WIKATAMA INDAH SIGARET", category: "client", logo_url: "/wikatama-indah.jpeg" },
-    { id: "djarum", name: "PT DJARUM", category: "client", logo_url: "/pt-djarum-logo.jpeg" },
+    { id: "chandra-asri-mulia-abadi", name: "PT CHANDRA ASRI MULIA ABADI", category: "client", logo_url: "/candra-asri.jpeg" },
     { id: "sumber-cipta-multiniaga", name: "PT SUMBER CIPTA MULTINIAGA", category: "client", logo_url: "/pt-sumbercipta.jpeg" },
+    { id: "djarum", name: "PT DJARUM", category: "client", logo_url: "/pt-djarum-logo.jpeg" },
     { id: "maju-abadi-sigaret", name: "PT MAJU ABADI SIGARET", category: "client" },
     { id: "mitra-pratama-integra", name: "PT MITRA PRATAMA INTEGRA", category: "client", logo_url: "/mitra-logo.jpeg" },
     { id: "dian mulyo", name: "PR DIAN MULYO", category: "client", logo_url: "/dian-mulyo.jpeg" },
@@ -122,7 +122,7 @@ function PartnerTile({ name, logo_url }: { name: string; logo_url?: string }) {
 <div className="flex items-center justify-center">
   {logo_url ? (
     <div
-      className={`flex items-center justify-center rounded-lg bg-white border border-gray-100 shadow-sm ${
+      className={`flex items-center justify-center rounded-lg bg-white shadow-sm ${
         wide
           ? "h-20 w-40 sm:h-24 sm:w-48"
           : "h-24 w-24 sm:h-28 sm:w-28"
