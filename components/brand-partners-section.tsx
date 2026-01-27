@@ -177,7 +177,7 @@ export function BrandPartnersSection() {
               <div className="text-gray-700">Proyek Selesai</div>
             </div>
             <div>
-              <div className="text-2xl font-bold text-green-600">3+</div>
+              <div className="text-2xl font-bold text-green-600">5+</div>
               <div className="text-gray-700">Tahun Pengalaman</div>
             </div>
           </div>
