@@ -32,13 +32,15 @@ const groupedPartners: Record<string, BrandPartner[]> = {
   ],
   "Grup Industri Rokok": [
     { id: "djarum", name: "PT DJARUM", category: "client", logo_url: "/pt-djarum-logo.jpeg" },
-    { id: "wikatama", name: "PT WIKATAMA INDAH SIGARET", category: "client" },
+    { id: "wikatama", name: "PT WIKATAMA INDAH SIGARET", category: "client", logo_url: "/wikatama-indah.jpeg" },
     { id: "sumber-cipta-multiniaga", name: "PT SUMBER CIPTA MULTINIAGA", category: "client", logo_url: "/pt-sumbercipta.jpeg" },
     { id: "maju-abadi-sigaret", name: "PT MAJU ABADI SIGARET", category: "client" },
-    { id: "chandra-asri-mulia-abadi", name: "PT CHANDRA ASRI MULIA ABADI", category: "client" },
-    { id: "roberto-prima-tobacco", name: "PT ROBERTO PRIMA TOBACCO", category: "client" },
-    { id: "mitra-pratama-integra", name: "PT MITRA PRATAMA INTEGRA", category: "client" },
+    { id: "chandra-asri-mulia-abadi", name: "PT CHANDRA ASRI MULIA ABADI", category: "client", logo_url: "/candra-asri.jpeg" },
+    { id: "roberto-prima-tobacco", name: "PT ROBERTO PRIMA TOBACCO", category: "client", logo_url: "/roberto-prima.jpeg" },
+    { id: "mitra-pratama-integra", name: "PT MITRA PRATAMA INTEGRA", category: "client", logo_url: "/mitra-logo.jpeg" },
     { id: "jamrud khatulistiwa", name: "PT JAMRUD KHATULISTIWA TOBACCO", category: "client", logo_url: "/pt-jamrud.jpeg" },
+    { id: "stevania ultra tobacco", name: "PT STEVANIA ULTRA TOBACCO", category: "client", logo_url: "/stevania-ultra.jpeg" },
+    { id: "dian mulyo", name: "PR DIAN MULYO", category: "client", logo_url: "/dian-mulyo.jpeg" },
   ],
   "Vendor & Advertising Lokal": [
     { id: "advertindo", name: "CV ADVERTINDO JAYA MAKMUR DINAMIKA", category: "client" },
@@ -97,13 +99,13 @@ function PartnerTile({ name, logo_url }: { name: string; logo_url?: string }) {
       title={name}
       role="listitem"
     >
-      <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-white overflow-hidden border border-gray-100">
+      <div className="flex h-14 w-14 items-center justify-center rounded-lg bg-white overflow-hidden border border-gray-100">
         {logo_url ? (
           <Image
             src={logo_url}
             alt={name}
-            width={48}
-            height={48}
+            width={58}
+            height={58}
             className="object-contain"
           />
         ) : (
