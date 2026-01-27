@@ -104,8 +104,8 @@ function PartnerTile({ name, logo_url }: { name: string; logo_url?: string }) {
           <Image
             src={logo_url}
             alt={name}
-            width={58}
-            height={58}
+            width={78}
+            height={78}
             className="object-contain"
           />
         ) : (
