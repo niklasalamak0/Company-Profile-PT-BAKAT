@@ -1,6 +1,9 @@
 "use client"
 
+export const dynamic = "force-dynamic"
+
 import { useState } from "react"
+import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -24,7 +27,7 @@ const iconMap = {
   Wrench,
   Paintbrush,
   Lightbulb,
-}
+} as const
 
 interface Service {
   id: string
