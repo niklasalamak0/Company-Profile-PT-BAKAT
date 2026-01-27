@@ -214,14 +214,14 @@ const db: Record<Slug, DocPageData> = {
         url: "/bangunan/bangun-sanyo.jpg",
         lokasi: "Perumahan Sanyo, Bekasi",
         tanggal: "2024-09-11",
-        caption: "Pembangunan instalasi Sanyo",
+        caption: "Pembangunan instalasi pompa air",
       },
       {
         id: "bangun-3",
         url: "/bangunan/bangun-tutup-saluran-air.jpg",
         lokasi: "Saluran Air, Jakarta",
         tanggal: "2024-09-12",
-        caption: "Pembangunan penutup saluran air",
+        caption: "Pembangunan penutup saluran drainase",
       },
       {
         id: "bangun-4",
@@ -242,7 +242,7 @@ const db: Record<Slug, DocPageData> = {
         url: "/bangunan/bangun-panggung-tenda.jpg",
         lokasi: "Event Outdoor, Bandung",
         tanggal: "2024-09-15",
-        caption: "Pembuatan panggung dan tenda acara",
+        caption: "Pembuatan panggung dan tenda event",
       },
       {
         id: "bangun-7",
