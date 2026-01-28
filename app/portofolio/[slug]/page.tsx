@@ -67,7 +67,7 @@ const db: Record<Slug, DocPageData> = {
   "dokumentasi-advertising": {
     title: "Dokumentasi Advertising",
     topLevel: "advertising",
-    hero: "/iklan3.jpg",
+    hero: "/dokumentasi-advertising.jpeg",,
     items: [
 
     // --- Advertising ---
@@ -200,7 +200,7 @@ const db: Record<Slug, DocPageData> = {
   "dokumentasi-pembangunan": {
     title: "Dokumentasi Pekerjaan Pembangunan",
     topLevel: "building",
-    hero: "/bangunan.jpg", // bisa diganti dengan gambar hero lain
+    hero: "/dokumentasi-bangunan.png", // bisa diganti dengan gambar hero lain
     items: [
       {
         id: "bangun-1",
@@ -314,7 +314,7 @@ const db: Record<Slug, DocPageData> = {
   "dokumentasi-kelistrikan": {
     title: "Dokumentasi Pekerjaan Kelistrikan",
     topLevel: "maintenance",
-    hero: "/listrik2.jpg",
+    hero: "/dokumentasi-keistrikan.png",
     items: [
       {
         id: "listrik-1",
@@ -386,7 +386,7 @@ const db: Record<Slug, DocPageData> = {
   "dokumentasi-maintenance": {
     title: "Dokumentasi Pekerjaan Maintenance",
     topLevel: "maintenance",
-    hero: "/maintenance2.jpg",
+    hero: "/dokumentasi-maintenance.jpeg",
     items: [
       {
         id: "mt-1",
@@ -659,3 +659,4 @@ export default function DocCategoryPage({
     </main>
   )
 }
+
